@@ -73,13 +73,13 @@ Route::get('login/{driver}', 'Auth\LoginController@redirectToProvider')
 Route::get('access/{driver}', 'Auth\LoginController@handleProviderCallback')
     ->name('login.callback');
 
-Route::get('/user/profile', 'UserController@index')->middleware('auth');
-Route::post('/user/profile', 'UserController@update_avatar')->middleware('auth');
+Route::get('/user/profile', 'UserController@index')->middleware('verified');
+Route::post('/user/profile', 'UserController@update_avatar')->middleware('verified');
 Route::get('/baby-names-list', 'UserController@lists');
 Route::get('/collection', 'UserController@lists');
 Route::get('/baby-names-list-{id}', 'UserController@list_view');
 Route::get('/user/lists', 'UserController@lists');
-Route::post('/user/lists', 'UserController@addList')->middleware('auth');
+Route::post('/user/lists', 'UserController@addList')->middleware('verified');
 Route::get('/user/lists/view/{id}', 'UserController@list_view');
 Route::get('/collection/{slug}', 'UserController@collection');
 
@@ -100,7 +100,7 @@ Route::get('/dua.php', function (App\Dua $dua) {
 //Route::post('/send', 'EmailController@send');
 
 Route::resource('photos', 'GalleryController');
-Route::get('/add-name-faces/{id}', 'GalleryController@face')->middleware('auth');
+Route::get('/add-name-faces/{id}', 'GalleryController@face')->middleware('verified');
 
 //admin
 Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
@@ -113,22 +113,6 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
     Route::resource('/details', 'Admin\DetailsController');
 });
 Route::get('/datatable/getdata', 'Admin\NamesController@anyData');
-Route::get('/mypanel/verify/{id}', 'Admin\NamesController@verify')->middleware('auth');
+Route::get('/mypanel/verify/{id}', 'Admin\NamesController@verify')->middleware('verified');
 Route::get('/get-counts', 'FavoriteController@getFavCount');
 Route::get('get-info/{id}', 'ModalController@info');
-
-Route::get('up', function (App\SocialAccount $social) {
-    $olds = DB::table('users')->get();
-     foreach($olds as $old)
-    {
-        if($old->provider)
-        {
-            $social = new $social;
-            $social->user_id = $old->id;
-            $social->provider_name = $old->provider;
-            $social->provider_id = $old->provider_id;
-            $social->save();
-        }
-
-    }
-});
