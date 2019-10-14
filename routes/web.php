@@ -72,8 +72,8 @@ Route::get('login/{driver}', 'Auth\LoginController@redirectToProvider')
     ->name('login.provider');
 Route::get('access/{driver}', 'Auth\LoginController@handleProviderCallback')
     ->name('login.callback');
-
-Route::get('/user/profile', 'UserController@index')->middleware('verified');
+Route::get('/user', 'UserController@index')->middleware('verified');
+Route::get('/user/profile', 'UserController@profile')->middleware('verified');
 Route::post('/user/profile', 'UserController@update_avatar')->middleware('verified');
 Route::get('/baby-names-list', 'UserController@lists');
 Route::get('/collection', 'UserController@lists');
