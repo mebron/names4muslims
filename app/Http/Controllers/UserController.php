@@ -10,7 +10,7 @@ use App\UserList;
 use App\Favorite;
 use App\UserListNames;
 use App\User;
-use Helori\LaravelSeo\Facades\Seo;
+use Artesaos\SEOTools\Facades\SEOTools;
 use Alert;
 
 class UserController extends Controller
@@ -43,9 +43,9 @@ class UserController extends Controller
     }
     public function lists()
     {
-    	$lists = UserList::where('active', 1)->get(); 
-    	Seo::set('title', 'User created name lists');
-        Seo::set('description', "Find some cool names from our user's name lists");
+    	$lists = UserList::where('active', 1)->get();
+			SEOTools::setTitle('User created name lists');
+			SEOTools::setDescription("Find some cool names from our user's name lists");
     	return view('user.user_lists', compact('lists'));
     }
     public function addList(Request $request)
@@ -58,11 +58,11 @@ class UserController extends Controller
     			]);
     		$user_list = New UserList;
     		$user_list->user_id = $user->id;
-    		$user_list->title = $request->title;            
+    		$user_list->title = $request->title;
     		$user_list->description = $request->description;
     		$user_list->save();
-    		$list_id = $user_list->id;  
-    	
+    		$list_id = $user_list->id;
+
     		foreach (Favorite::where('user_id', $user->id)->cursor() as $favorite){
     			$list_names = New UserListNames;
     			$list_names->name_id = $favorite->name_id;
@@ -78,14 +78,10 @@ class UserController extends Controller
     	$names = UserList::find($id)->lists;
     	$lit = UserList::find($id);
     	$data['title'] = $lit->title;
-    	$data['author'] = User::find($lit->user_id)->name;
-    	Seo::set('title', $lit->title);
-        Seo::set('description', "This Baby name lists are created by our user - " . $data['author']);
-        Seo::set('og-image-url',  url('/img/foots_sm.png'));
-        Seo::set('og-image-type', 'image/png');
-    	Seo::set('og-image-width', 300);
-    	Seo::set('og-image-height', 259);
-    	
+			$data['author'] = User::find($lit->user_id)->name;
+			SEOTools::setTitle($lit->title);
+			SEOTools::setDescription("This Baby name lists are created by our user -". $data['author']);
+
     	return view('user.user_list_names',compact('names','data'));
     }
     public function collection($slug)
@@ -95,14 +91,9 @@ class UserController extends Controller
         $names = $list->lists;
         //$lit = UserList::find($id);
         $data['title'] = $list->title;
-        $data['author'] = User::find($list->user_id)->name;
-        Seo::set('title', $list->title);
-        Seo::set('description', "This Baby name lists are created by our user - " . $data['author']);
-        Seo::set('og-image-url',  url('/img/foots_sm.png'));
-        Seo::set('og-image-type', 'image/png');
-        Seo::set('og-image-width', 300);
-        Seo::set('og-image-height', 259);
-        
+				$data['author'] = User::find($list->user_id)->name;
+				SEOTools::setTitle($list->title);
+				SEOTools::setDescription("This Baby name lists are created by our user - ". $data['author']);
         return view('user.user_list_names',compact('names','data'));
     }
 }
