@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Name;
-use Helori\LaravelSeo\Facades\Seo;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 class SearchController extends Controller
 {
@@ -13,9 +13,8 @@ class SearchController extends Controller
     public function search(Request $request)
     {
         $key = $request->get('q');
-        Seo::set('title', 'Muslim Names Search Results for '.$key.'');
-        Seo::set('description', "A Simple Search for Muslim Baby Names");
-        Seo::set('keywords', "muslim baby names, unique muslim baby names, new unique muslim names");
+        SEOTools::setTitle('Muslim Names Search Results for '.$key.'');
+        SEOTools::setDescription("muslim baby names, unique muslim baby names, new unique muslim names");
         // First we define the error message we are going to show if no keywords
         // existed or if no results found.
         $error = ['error' => 'No results found, please try with different keywords.'];
@@ -44,7 +43,7 @@ class SearchController extends Controller
                 return view('names.error_search',compact('error'));
             }
            // $names = $name->count() ? $name : $error;
-           
+
         }
 
         // Return the error message if no keywords existed
