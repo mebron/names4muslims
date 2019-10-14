@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
 use Alert;
-use Seo;
+use Artesaos\SEOTools\Facades\SEOTools;
 use Anam\Captcha\Captcha;
 
 class ContactController extends Controller
 {
     public function index()
     {
-        Seo::set('title', 'Contact Us | Names4Muslims');
-        Seo::set('description', "Contact Names4muslims.com");
+        SEOTools::setTitle('Contact Us | Names4Muslims');
+        SEOTools::setDescription("Contact Names4muslims.com");
     	return view('pages.contact');
     }
     public function sendContact(Request $request, Captcha $captcha)
@@ -23,15 +23,15 @@ class ContactController extends Controller
 
         if (! $response->isVerified()) {
             // dd($response->errors());
-            return redirect('/contacts.html'); 
+            return redirect('/contacts.html');
             // ->withErrors($validator);
         }
 
     	$data['msg'] = $request->message;
     	$data['from'] = $request->email;
     	Mail::to('muslimnames@gmail.com')->send(New ContactMail($data));
-    	Alert::info('Email was sent!');        
-        return redirect('/');   
+    	Alert::info('Email was sent!');
+        return redirect('/');
     }
 
 }
