@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/baby-names', 'NameController@index');
 Route::get('/baby-names/muslim-girl-names', 'NameController@girls');
