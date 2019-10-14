@@ -9,7 +9,7 @@
 				<div class="card-body">
 				<div class="row">
 					@if($user->avatar)
-					<div class="col-md-4"><img src="{{ URL::asset('app/users/avatar/'. $user->avatar) }}" class="img-thumbnail"></div>
+					<div class="col-md-4"><img src="{{ URL::asset('storage/app/users/avatar/'. $user->avatar) }}" class="img-thumbnail"></div>
 					@else
 					<div class="col-md-4"><img src="{{ URL::asset('images/avatar.jpg') }}" class="img-thumbnail"></div>
 					@endif
