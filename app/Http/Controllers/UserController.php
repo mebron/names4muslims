@@ -27,7 +27,7 @@ class UserController extends Controller
 		if ($request->hasFile('avatar')) {
 			$name = Auth::id() . '_' . $request->avatar->hashName();
 			$avatar = $request->avatar;
-			$path = storage_path('app/users/avatar/' . $name);
+			$path = storage_path('app/public/user/avatar/' . $name);
 			if (Image::make($avatar->getRealPath())->resize(300, 300, function ($constraint) {
 				$constraint->aspectRatio();
 			})->save($path)) {
