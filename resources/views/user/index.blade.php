@@ -8,8 +8,11 @@
 				<div class="card-header">{{ $user->name }}</div>
 				<div class="card-body">
 				<div class="row">
-
+					@if($user->avatar)
 					<div class="col-md-4"><img src="/storage/users/avatar/{{ $user->avatar }}" class="img-thumbnail"></div>
+					@else
+					<div class="col-md-4"><img src="{{ URL::asset('images/avatar.jpg') }}" class="img-thumbnail"></div>
+					@endif
 					<div class="col-md-8">
 					<form enctype="multipart/form-data" action="/user/profile" method="post">
 						{{ csrf_field() }}
