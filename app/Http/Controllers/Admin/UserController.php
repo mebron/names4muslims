@@ -23,9 +23,6 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = Auth::user();
-        echo $user->name;
-        dd($user->getRoleNames());
         $users = User::latest()->paginate();
         return view('admin.user.index', compact('users'));
     }

@@ -57,6 +57,9 @@
             <li class="nav-item">
               <a class="nav-link" href="/mypanel/users">Users</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/mypanel/roles">Roles</a>
+            </li>
           </ul>
         </nav>
       </div>

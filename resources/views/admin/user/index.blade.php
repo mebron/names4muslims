@@ -1,12 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
-@role('Admin')
-    I am a writer!
-@else
-    I am not a writer...
-@endrole
-
 <div class="card rounded-0">
   <div class="card-header">
     <div class="row">
@@ -28,6 +22,7 @@
             <th>Id</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Verified</th>
             <th>Role</th>
             <th>Created At</th>
             @can('edit_users', 'delete_users')
@@ -41,6 +36,7 @@
             <td>{{ $user->id }}</td>
             <td>{{ $user->name }}</td>
             <td>{{ $user->email }}</td>
+            <td>{{ $user->email_verified_at }}</td>
             <td>{{ $user->roles->implode('name', ', ') }}</td>
             <td>{{ $user->created_at->toFormattedDateString() }}</td>
 

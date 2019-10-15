@@ -103,8 +103,9 @@ Route::resource('photos', 'GalleryController');
 Route::get('/add-name-faces/{id}', 'GalleryController@face')->middleware('verified');
 
 //admin
-Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
+Route::group(['middleware' => ['auth','role:Admin'], 'prefix' => 'mypanel'], function () {
  //Dashboard Route
+    Route::get('/mypanel/verify/{id}', 'Admin\NameController@verify');
     Route::get('/', 'Admin\AdminController@index');
     Route::get('/sitemap', 'Admin\AdminController@sitemap');
     Route::resource('/names', 'Admin\NameController');
@@ -113,6 +114,6 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
     Route::resource('users', 'Admin\UserController');
 });
 Route::get('/datatable/getdata', 'Admin\NameController@anyData');
-Route::get('/mypanel/verify/{id}', 'Admin\NameController@verify')->middleware('verified');
+
 Route::get('/get-counts', 'FavoriteController@getFavCount');
 Route::get('get-info/{id}', 'ModalController@info');

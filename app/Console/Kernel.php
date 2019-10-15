@@ -6,11 +6,6 @@ use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 use App\Console\Commands\AuthPermissionCommand;
 
-/**
- * Permissions Management
- * Command: php artisan auth:permission tasks
- * author: Mujeeb Mebron
- */
 class Kernel extends ConsoleKernel
 {
     /**

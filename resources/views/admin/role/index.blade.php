@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
     <!-- Modal -->
@@ -23,8 +23,8 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    
-            <!-- Submit Form Button -->           
+
+            <!-- Submit Form Button -->
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
@@ -47,11 +47,11 @@
       </div>
     <div class="card-body">
     @forelse ($roles as $role)
-    
+
     <form action="/admin/roles/{{ $role->id }}" method="POST">
       @csrf
       @method('PUT')
-    
+
     @if($role->name === 'Admin')
     @include('admin.shared._permissions', [
     'title' => $role->name .' Permissions',
@@ -66,12 +66,12 @@
         <button class="btn btn-success float-right">Save</button>
       </div>
     </div>
-    
+
     @endcan
     @endif
-    
+
   </form>
-    
+
     @empty
     <p>No Roles defined, please run <code>php artisan db:seed</code> to seed some dummy data.</p>
     @endforelse
