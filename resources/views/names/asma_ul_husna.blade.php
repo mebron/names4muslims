@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php $seg = Request::get('page'); ?>
-    <title>{{ Seo::get('title') }}{{ isset($seg) ? ' Page '.$seg :'' }}</title>
-    <meta name="description" content="{{ Seo::get('description') }}{{ isset($seg) ? ' Showing page '.$seg :'' }}" />
+    {!! SEO::generate() !!}
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('laravel-seo::meta-facebook')
@@ -46,7 +44,7 @@ echo json_encode([
                     </div>
                     <div class="d-none d-sm-block col-sm-8 col-lg-8">
                         <h1 class="float-right text-info  main-title2">
-                            {{ Str::before(Seo::get('title'),'|') ?? 'Muslim Names and Meaning' }}</h1>
+                            {{ Str::before(SEOMeta::getTitle('title'),'|') ?? 'Muslim Names and Meaning' }}</h1>
                     </div>
                 </div>
             </div>
@@ -60,7 +58,7 @@ echo json_encode([
             @else
             <div class="container pt-2">
             <div class="row">
-                @endif                
+                @endif
                     <div class="col-md-8">
                         <div class="card">
                             <div class="card-header bg-olive text-white">
@@ -87,7 +85,7 @@ echo json_encode([
                                             <td nowrap>
                                                 <h2>{!! $name->arabic !!}</h2>
                                             </td>
-                                            <td data-title="Meaning">{{ strip_tags($name->meaning) }}</td>                                            
+                                            <td data-title="Meaning">{{ strip_tags($name->meaning) }}</td>
                                         </tr>
                                         @endforeach
                                     </table>
@@ -149,7 +147,7 @@ echo json_encode([
 
                 </div>
             </div>
-        </footer>        
+        </footer>
     </div>
     <!-- Scripts -->
     <script src="{{ mix('/js/app.js') }}"></script>
@@ -188,9 +186,9 @@ ga('send', 'pageview');
         });
 
         return '<div id="favs-results">Loading...</div>';
-        // Initially, the content() function returns a parent div, 
+        // Initially, the content() function returns a parent div,
         // which shows "Loading..." message.
-        // As soon as the ajax call is complete, the parent div inside 
+        // As soon as the ajax call is complete, the parent div inside
         // the popover gets the ajax call's result.
     }
 });
