@@ -103,7 +103,7 @@ Route::resource('photos', 'GalleryController');
 Route::get('/add-name-faces/{id}', 'GalleryController@face')->middleware('verified');
 
 //admin
-Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
+Route::group(['middleware' => ['auth','role:Admin'], 'prefix' => 'mypanel'], function () {
  //Dashboard Route
     Route::get('/', 'Admin\AdminController@index');
     Route::get('/sitemap', 'Admin\AdminController@sitemap');
