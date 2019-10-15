@@ -107,12 +107,12 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
  //Dashboard Route
     Route::get('/', 'Admin\AdminController@index');
     Route::get('/sitemap', 'Admin\AdminController@sitemap');
-    Route::resource('/names', 'Admin\NamesController');
-    Route::resource('/details', 'Admin\DetailsController');
+    Route::resource('/names', 'Admin\NameController');
+    Route::resource('/details', 'Admin\DetailController');
     Route::resource('roles', 'Admin\RoleController');
     Route::resource('users', 'Admin\UserController');
 });
-Route::get('/datatable/getdata', 'Admin\NamesController@anyData');
-Route::get('/mypanel/verify/{id}', 'Admin\NamesController@verify')->middleware('verified');
+Route::get('/datatable/getdata', 'Admin\NameController@anyData');
+Route::get('/mypanel/verify/{id}', 'Admin\NameController@verify')->middleware('verified');
 Route::get('/get-counts', 'FavoriteController@getFavCount');
 Route::get('get-info/{id}', 'ModalController@info');
