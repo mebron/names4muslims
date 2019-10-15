@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\User;
-use Spatie\Permission\Models\Role;
-use Spatie\Permission\Models\Permission;
+use App\Role;
+use App\Permission;
 use App\Authorizable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +23,8 @@ class UserController extends Controller
      */
     public function index()
     {
+        $user = Auth::user();
+        dd($user->getRoleNames());
         $users = User::latest()->paginate();
         return view('admin.user.index', compact('users'));
     }
