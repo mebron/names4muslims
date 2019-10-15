@@ -110,6 +110,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
     Route::resource('/names', 'Admin\NamesController');
     Route::resource('/details', 'Admin\DetailsController');
     Route::resource('roles', 'Admin\RoleController');
+    Route::resource('users', 'Admin\UserController');
 });
 Route::get('/datatable/getdata', 'Admin\NamesController@anyData');
 Route::get('/mypanel/verify/{id}', 'Admin\NamesController@verify')->middleware('verified');
