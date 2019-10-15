@@ -105,12 +105,11 @@ Route::get('/add-name-faces/{id}', 'GalleryController@face')->middleware('verifi
 //admin
 Route::group(['middleware' => ['auth'], 'prefix' => 'mypanel'], function () {
  //Dashboard Route
-    Route::get('dashboard', function () {
-    return view('admin.dashboard');
-    });
-    Route::get('/sitemap', 'Admin\DashboardController@sitemap');
+    Route::get('/', 'Admin\AdminController@index');
+    Route::get('/sitemap', 'Admin\AdminController@sitemap');
     Route::resource('/names', 'Admin\NamesController');
     Route::resource('/details', 'Admin\DetailsController');
+    Route::resource('roles', 'Admin\RoleController');
 });
 Route::get('/datatable/getdata', 'Admin\NamesController@anyData');
 Route::get('/mypanel/verify/{id}', 'Admin\NamesController@verify')->middleware('verified');
