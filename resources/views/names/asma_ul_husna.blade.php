@@ -8,8 +8,6 @@
     {!! SEO::generate() !!}
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @include('laravel-seo::meta-facebook')
-    @include('laravel-seo::meta-twitter')
     <link rel="shortcut icon" href="//d3w4b6mljoazo9.cloudfront.net/assets/ico/favicon.png">
     <link rel="apple-touch-icon"
         href="//d3w4b6mljoazo9.cloudfront.net/assets/ico/apple-touch-icon-144-precomposed.png" />
