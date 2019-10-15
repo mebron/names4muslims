@@ -6,6 +6,7 @@
 @else
     I am not a writer...
 @endrole
+{{ dd($users->getRoleNames()) }}
 <div class="card rounded-0">
   <div class="card-header">
     <div class="row">
