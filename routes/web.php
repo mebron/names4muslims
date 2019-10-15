@@ -84,9 +84,9 @@ Route::get('/user/lists/view/{id}', 'UserController@list_view');
 Route::get('/collection/{slug}', 'UserController@collection');
 
 Route::get('/asma-ul-husna', function (App\AsmaulHusna $ism) {
+    $names = $ism->all();
     SEO::setTitle('99 Beautiful names of Allah');
     SEO::setDescription("Asma means names, and husna means beautiful. Thus asma al husna means the beautiful names of Allah Subhanah");
-    $names = $ism->all();
     return view('names.asma_ul_husna', compact('names'));
 });
 
