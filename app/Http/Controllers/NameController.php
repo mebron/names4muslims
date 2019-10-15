@@ -84,7 +84,7 @@ class NameController extends Controller
         $hit = new hit;
         $hit->name_id = $id;
         $hit->save();
-        $names->visits()->increment();
+        //$names->visits()->increment();
 
         SEOTools::setTitle('Meaning of Name '.$names->name);
         SEOTools::setDescription($txt);
