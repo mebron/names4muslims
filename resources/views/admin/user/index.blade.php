@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+@role('Admin')
+    I am a writer!
+@else
+    I am not a writer...
+@endrole
 <div class="card rounded-0">
   <div class="card-header">
     <div class="row">
@@ -37,7 +42,7 @@
             <td>{{ $user->email }}</td>
             <td>{{ $user->roles->implode('name', ', ') }}</td>
             <td>{{ $user->created_at->toFormattedDateString() }}</td>
-    
+
             @can('edit_users')
             <td class="text-center">
               @include('admin.shared._actions', [
@@ -50,7 +55,7 @@
           @endforeach
         </tbody>
       </table>
-    
+
       <div class="text-center">
         {{ $users->links() }}
       </div>
