@@ -13,7 +13,7 @@ use Alert;
 
 class UserController extends Controller
 {
-    use Authorizable;
+   // use Authorizable;
 
     /**
      * Display a listing of the resource.
