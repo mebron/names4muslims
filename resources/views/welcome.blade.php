@@ -51,7 +51,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 }
 .link-pink { color: #ff99cc!important; }.link-pink:hover { color: #ff6699!important; }.blue-link { color: #99ccff!important; }.blue-link:hover { color: #6699ff!important; }
 </style>
-<link rel="stylesheet" href="{{ mix('css/app.css') }}">
+<link rel="stylesheet" href="https://d3w4b6mljoazo9.cloudfront.net/assets/css/app.css">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
