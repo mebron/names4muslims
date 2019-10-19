@@ -22,8 +22,6 @@
 <link rel="apple-touch-icon" href="https://d3w4b6mljoazo9.cloudfront.net/assets/ico/apple-touch-icon-144-precomposed.png"/>
 <!-- Styles -->
 <link rel="dns-prefetch" href="//google-analytics.com">
-<!-- Scripts -->
-<script src="https://use.fontawesome.com/723865a7d5.js"></script>
 <script>
 window.Laravel = <?php
 echo json_encode([
@@ -54,20 +52,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 .link-pink { color: #ff99cc!important; }.link-pink:hover { color: #ff6699!important; }.blue-link { color: #99ccff!important; }.blue-link:hover { color: #6699ff!important; }
 </style>
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W9W26C9');</script>
-<!-- End Google Tag Manager -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-9750369232662797",
-          enable_page_level_ads: true
-     });
-</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -546,6 +530,7 @@ We are proud to offer the web's largest collection of Muslim Baby Names or Islam
   </div>
 </div>
 <!-- Scripts -->
+<script src="https://use.fontawesome.com/723865a7d5.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="https://d3w4b6mljoazo9.cloudfront.net/assets/js/app.js"></script>
 <script>
@@ -557,6 +542,20 @@ $(document).ready(function(){
         });
     });
 });
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W9W26C9');</script>
+<!-- End Google Tag Manager -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9750369232662797",
+          enable_page_level_ads: true
+     });
 </script>
 @include('sweet::alert')
 </body>
