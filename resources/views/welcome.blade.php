@@ -17,7 +17,7 @@
 <link href="https://www.names4muslims.com/" rel="home">
 <meta property="og:site_name" content="Names4Muslims.com"/>
 <meta property="og:image" content="https://d3w4b6mljoazo9.cloudfront.net/assets/img/n4m.png">
-<meta property="og:description" content="Muslim names and meanings. Choose modern, cute and beautiful Islamic names for your baby." />
+<meta property="og:description" content="Muslim names and their meanings. Choose modern, cute and beautiful Islamic names for your baby." />
 <link rel="shortcut icon" href="https://d3w4b6mljoazo9.cloudfront.net/assets/ico/favicon.png">
 <link rel="apple-touch-icon" href="https://d3w4b6mljoazo9.cloudfront.net/assets/ico/apple-touch-icon-144-precomposed.png"/>
 <!-- Styles -->
@@ -550,13 +550,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-W9W26C9');</script>
 <!-- End Google Tag Manager -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-9750369232662797",
-          enable_page_level_ads: true
-     });
-</script>
 @include('sweet::alert')
 </body>
 </html>
