@@ -13,7 +13,7 @@ use Artesaos\SEOTools\Facades\SEOTools;
 use App\NameRating;
 use DB;
 use Carbon\Carbon;
-use RedisManager;
+use Illuminate\Support\Facades\Redis;
 
 
 class NameController extends Controller
