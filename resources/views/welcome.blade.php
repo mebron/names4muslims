@@ -482,7 +482,7 @@ We are proud to offer the web's largest collection of Muslim Baby Names or Islam
 <a class="text-muted" href="{{ url('/') }}">Home</a> | <a class="text-muted" href="{{ url('privacy.html') }}">Privacy & Policy</a> | <a class="text-muted" href="{{ url('contacts.html') }}">Contact Us</a>
 </div>
 <div class="col-md-8">
-<p class="text-muted text-right">© Copyright &copy; <script>document.write(new Date().getFullYear())</script> Names4muslims.com | www.muslim-names.net.</p>
+<p class="text-muted text-right">© Copyright &copy; <script>document.write(new Date().getFullYear())</script> Names4muslims.com</p>
 </div>
 </div>
 </div>
