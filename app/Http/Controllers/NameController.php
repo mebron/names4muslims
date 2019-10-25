@@ -16,6 +16,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Redis;
 
 
+
 class NameController extends Controller
 {
     public function __construct()
