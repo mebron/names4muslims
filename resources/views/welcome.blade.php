@@ -22,6 +22,9 @@
 <link rel="apple-touch-icon" href="https://d3w4b6mljoazo9.cloudfront.net/assets/ico/apple-touch-icon-144-precomposed.png"/>
 <!-- Styles -->
 <link rel="dns-prefetch" href="//google-analytics.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//www.doubleclickbygoogle.com">
+<link rel="dns-prefetch" href="////d3w4b6mljoazo9.cloudfront.net">
 <script>
 window.Laravel = <?php
 echo json_encode([
@@ -29,7 +32,6 @@ echo json_encode([
 ]);
 ?>
 </script>
-<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 <style>
 .bg-grdorange{
 /* Permalink - use to edit and share this gradient:
