@@ -6,12 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests;
 use App\Name;
-use App\User;
-use App\Favorite;
 use App\Hit;
 use Artesaos\SEOTools\Facades\SEOTools;
 use App\NameRating;
-use DB;
 use Carbon\Carbon;
 class NameController extends Controller
 {
