@@ -78,12 +78,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 </ul>
 </div>
 </div>
-<footer class="footer mt-3 fixed-bottom">
+<footer class="pt-2">
 <div class="container">
 <div class="row">
-<div class="col-xs-12 col-sm-5 col-md-5 col-md-push-7"><p class="text-muted"><a class="text-muted" href="http://www.names4muslims.com/">Home</a> | <a class="text-muted" href="{{ URL('/privacy.html') }}">Privacy & Policy</a> | <a class="text-muted" href="{{ URL('/contacts.html')}}">Contact Us</a> </p></div>
-<div class="col-xs-12 col-sm-7 col-md-7 col-md-pull-5"><p class="text-left text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Names4muslims.com and www.muslim-names.net. Site by <a class="text-muted" href="http://mebron.com" title="Website by">Mebron</a><br></p></div>
-
+<div class="col-md-4">
+<a class="text-muted" href="{{ url('/') }}">Home</a> | <a class="text-muted" href="{{ url('privacy.html') }}">Privacy & Policy</a> | <a class="text-muted" href="{{ url('contacts.html') }}">Contact Us</a>
+</div>
+<div class="col-md-8">
+<p class="text-muted text-right">© Copyright &copy; <script>document.write(new Date().getFullYear())</script> Names4muslims.com</p>
+</div>
 </div>
 </div>
 </footer>

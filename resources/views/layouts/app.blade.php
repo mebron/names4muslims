@@ -203,12 +203,15 @@ data-ad-format="auto"></ins>
 </div>
 </div>
 </div>
-<footer class="mt-3">
+<footer class="pt-2">
 <div class="container">
-<div class="row p-3">
-<div class="col-xs-12 col-sm-5 col-md-5 col-md-push-7 text-muted"><a href="http://www.names4muslims.com/">Home</a> | <a href="{{ URL('/privacy.html') }}">Privacy &amp; Policy</a> | <a href="{{ URL('/contacts.html')}}">Contact Us</a></div>
-<div class="col-xs-12 col-sm-7 col-md-7 col-md-pull-5 text-muted">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Names4muslims.com. Site by <a href="http://mebron.com" title="Website by">Mebron</a></div>
-
+<div class="row">
+<div class="col-md-4">
+<a class="text-muted" href="{{ url('/') }}">Home</a> | <a class="text-muted" href="{{ url('privacy.html') }}">Privacy & Policy</a> | <a class="text-muted" href="{{ url('contacts.html') }}">Contact Us</a>
+</div>
+<div class="col-md-8">
+<p class="text-muted text-right">© Copyright &copy; <script>document.write(new Date().getFullYear())</script> Names4muslims.com</p>
+</div>
 </div>
 </div>
 </footer>
