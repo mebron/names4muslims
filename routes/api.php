@@ -13,9 +13,9 @@ use Illuminate\Http\Request;
 |
  */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
- return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//  return $request->user();
+// });
 Route::get('save-rating', 'Api\ApiController@setRating');
 Route::get('favorite-count', 'Api\ApiController@getFavCount');
 //Route::get('getdata','Api\ApiController@anyData');
