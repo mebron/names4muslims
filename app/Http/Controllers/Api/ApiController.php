@@ -12,11 +12,11 @@ use Datatables;
 class ApiController extends Controller {
 
     public function __construct() {
-        
+
     }
 
     public function getRatings(Request $request) {
-        
+
     }
     public function setRating(Request $request) {
 
@@ -24,14 +24,14 @@ class ApiController extends Controller {
         $ip = $request->ip();
         $rate = $request->get('rating');
         $rated = NameRating::where('name_id', $id)->first();
-        
+
         if (isset($rated->name_id)) {
             $voted_ip = unserialize($rated->used_ips);
             $count = $rated->total_votes; //how many votes total
             $current_rating = $rated->total_value; //total number of rating added together and stored
             $sum = $rate + $current_rating; // add together the current vote value and the total vote value
             $voted = $this->isVoted($id, $ip);
-            
+
 
             if ($voted == 0) {
                 // checking to see if the first vote has been tallied
@@ -78,6 +78,13 @@ class ApiController extends Controller {
             return '<table class="table-sm"><tr><td><a href="/mypanel/names/show/" class="btn btn-xs btn-success btn-sm"><i class="glyphicon glyphicon-edit"></i> View</a></td></tr></table>';
         });*/
         return datatables(Name::all())->addColumn('action', 'admin.names.names-action')->toJson();
+    }
+
+    public function search(Request $request)
+    {
+        $query = $request->get('query');
+        $names = Name::where('name', 'like', $query . '%')->take(10)->get();
+        return response()->json($names);
     }
 
 }

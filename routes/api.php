@@ -19,9 +19,5 @@ use Illuminate\Http\Request;
 Route::get('save-rating', 'Api\ApiController@setRating');
 Route::get('favorite-count', 'Api\ApiController@getFavCount');
 //Route::get('getdata','Api\ApiController@anyData');
-Route::get('search', function (Request $request, App\Name $name) {
- $query = $request->get('query');
- $names = $name->where('name', 'like', $query . '%')->take(10)->get();
- return response()->json($names);
-});
+Route::get('search', 'Api\ApiController@search');
 Route::get('datatable/getdata', 'Api\ApiController@anyData');
