@@ -36,16 +36,16 @@ class PageController extends Controller
     {
         $duas = Dua::get();
 
-        SEO::setTitle('Islamic duas');
-        SEO::setDescription("Islamic Duas for our Childrens and Parents");
+        SEOTools::setTitle('Islamic duas');
+        SEOTools::setDescription("Islamic Duas for our Childrens and Parents");
         return view('names.dua', compact('duas'));
     }
 
     public function asmaulHusna()
     {
         $names = AsmaulHusna::get();
-        SEO::setTitle('99 Beautiful names of Allah');
-        SEO::setDescription("Asma means names, and husna means beautiful. Thus asma al husna means the beautiful names of Allah Subhanah");
+        SEOTools::setTitle('99 Beautiful names of Allah');
+        SEOTools::setDescription("Asma means names, and husna means beautiful. Thus asma al husna means the beautiful names of Allah Subhanah");
         return view('names.asma_ul_husna', compact('names'));
     }
     public function comments()
