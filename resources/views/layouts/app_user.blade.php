@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="//cdn.names4muslims.com/assets/ico/apple-touch-icon-144-precomposed.png"/>
 <!-- Styles -->
 <link href="//cdn.names4muslims.com/assets/css/app.css" rel="stylesheet">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
 <link rel="dns-prefetch" href="//www.google-analytics.com">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">

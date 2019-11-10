@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="//d3w4b6mljoazo9.cloudfront.net/assets/ico/apple-touch-icon-144-precomposed.png"/>
 <!-- Styles -->
 <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
 <link rel="dns-prefetch" href="//www.google-analytics.com">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
