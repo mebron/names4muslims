@@ -240,8 +240,8 @@ data-ad-format="auto"></ins>
   </div>
 </div>
 <!-- Scripts -->
-<script src="{{ mix('/js/app.js') }}"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+<script src="//cdn.names4muslims.com/assets/js/app.js"></script>
+<script src="https://kit.fontawesome.com/e0ca5ae3cb.js" defer></script>
 <script>
 $(document).ready(function () {
  $('.content, .sidebar').theiaStickySidebar({

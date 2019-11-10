@@ -117,7 +117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 </div>
 <!-- Scripts -->
 <script src="//cdn.names4muslims.com/assets/js/app.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://kit.fontawesome.com/e0ca5ae3cb.js" defer></script>
 <script>
 $(document).ready(function () {
  $('.content, .sidebar').theiaStickySidebar({

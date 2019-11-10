@@ -12,9 +12,6 @@
 <link rel="apple-touch-icon" href="//cdn.names4muslims.com/assets/ico/apple-touch-icon-144-precomposed.png"/>
 <!-- Styles -->
 <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <link rel="dns-prefetch" href="//www.google-analytics.com">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
@@ -103,8 +100,9 @@ echo json_encode([
 </div>
 </div>
 <!-- Scripts -->
-<script src="{{ mix('/js/app.js') }}"></script>
+<script src="//cdn.names4muslims.com/assets/js/app.js"></script>
 <script src="https://use.fontawesome.com/723865a7d5.js"></script>
+<script src="https://kit.fontawesome.com/e0ca5ae3cb.js" defer></script>
 <script>
 $(document).ready(function () {
  $('.content, .sidebar').theiaStickySidebar({
