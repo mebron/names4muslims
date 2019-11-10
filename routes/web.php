@@ -87,20 +87,8 @@ Route::post('/user/lists', 'UserController@addList')->middleware('verified');
 Route::get('/user/lists/view/{id}', 'UserController@list_view');
 Route::get('/collection/{slug}', 'UserController@collection');
 
-Route::get('/asma-ul-husna', function (App\AsmaulHusna $ism) {
-    $names = $ism->all();
-    SEO::setTitle('99 Beautiful names of Allah');
-    SEO::setDescription("Asma means names, and husna means beautiful. Thus asma al husna means the beautiful names of Allah Subhanah");
-    return view('names.asma_ul_husna', compact('names'));
-});
-
-Route::get('/dua.php', function (App\Dua $dua) {
-    $duas = $dua->all();
-
-    SEO::setTitle('Islamic duas');
-    SEO::setDescription("Islamic Duas for our Childrens and Parents");
-    return view('names.dua', compact('duas'));
-});
+Route::get('/asma-ul-husna', 'PageController@asmaulHusna');
+Route::get('/dua.php', 'PageController@dua');
 //Route::post('/send', 'EmailController@send');
 
 Route::resource('photos', 'GalleryController');
