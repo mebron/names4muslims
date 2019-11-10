@@ -31,9 +31,7 @@ Route::get('/why-muslims-looking-for-meaning-of-name.html', 'PageController@tasm
 Route::get('/privacy.html', 'PageController@privacy');
 Route::get('/contacts.html', 'ContactController@index');
 Route::post('contact-us', 'ContactController@SendContact');
-Route::get('comments.html', function () {
-    return view('pages.comments');
-});
+Route::get('comments.html', 'PageController@comments');
 //random names
 Route::get('/baby-names/random-baby-names', 'NameController@randomNames');
 Route::get('/baby-names/random-girl-names', 'NameController@randomGirls');
