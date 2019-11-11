@@ -12,7 +12,7 @@
 <li class="breadcrumb-item"><a href="/muslim-girl-names">Muslim Girl Names</a></li>
 <li class="breadcrumb-item active">Page: {{ Request::query('page') }}</li>
 </ol>
-@if ($agent->isMobile())
+@if (!$agent->isMobile())
 <div class="card mb-2">
 <!-- N4M RESPONSIVE -->
 <ins class="adsbygoogle"
