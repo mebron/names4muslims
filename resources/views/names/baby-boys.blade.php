@@ -9,10 +9,10 @@
 <div class="col-12 col-lg-8">
 <ol class="breadcrumb mb-2">
 <li class="breadcrumb-item"><a href="/">Home</a></li>
-<li class="breadcrumb-item"><a href="/baby-names">Baby Names</a></li>
 <li class="breadcrumb-item"><a href="/muslim-boy-names">Boy Names</a></li>
 <li class="breadcrumb-item active">Page: {{ Request::query('page') }}</li>
 </ol>
+@if (!$agent->isMobile())
 <div class="card mb-2">
 <!-- N4M RESPONSIVE -->
 <ins class="adsbygoogle"
@@ -24,7 +24,7 @@ data-ad-format="auto"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-
+@endif
 <div class="card">
 <div class="card-header">
 <h4 class="text-xs-center">Muslim Boy Names A-Z Listing - Page: {{ Request::query('page') }}</h4>
