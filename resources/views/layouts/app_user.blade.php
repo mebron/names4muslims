@@ -71,9 +71,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 </span>
 </button></div>
 <ul class="dropdown-menu dropdown-menu-right" role="menu">
-<li><a href="/baby-boys.php" data-toggle="tooltip" data-placement="left" title="MuslimBoyNames"><i class="fa fa-mars" aria-hidden="true"></i></a></li>
-<li><a href="/baby-girls.php" data-toggle="tooltip" data-placement="left" title="MuslimGirlNames"><i class="fa fa-venus" aria-hidden="true"></i></a></li>
-<li><a href="/favorite-names.html" data-toggle="tooltip" data-placement="left" title="MyFavorites"><i class="fa fa-star-o"></i></a></li>
+<li><a href="/muslim-boy-names" data-toggle="tooltip" data-placement="left" title="Muslim Boy Names"><i class="fa fa-mars" aria-hidden="true"></i></a></li>
+<li><a href="/muslim-girl-names" data-toggle="tooltip" data-placement="left" title="Muslim Girl Names"><i class="fa fa-venus" aria-hidden="true"></i></a></li>
+<li><a href="/favorite-names" data-toggle="tooltip" data-placement="left" title="My Favorites"><i class="fa fa-star-o"></i></a></li>
 <li><a href="/" data-toggle="tooltip" data-placement="left" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
 </ul>
 </div>

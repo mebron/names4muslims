@@ -10,14 +10,14 @@
 <li class="nav-item">
     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 </li>
-<li class="nav-item {{ Request::is('baby-names/muslim-girl-names') ? 'active' : '' }}">
-    <a class="nav-link" href="/baby-names/muslim-girl-names">Muslim Girl Names</a>
+<li class="nav-item {{ Request::is('muslim-girl-names') ? 'active' : '' }}">
+    <a class="nav-link" href="/muslim-girl-names">Muslim Girl Names</a>
 </li>
-<li class="nav-item {{ Request::is('baby-names/muslim-boy-names') ? 'active' : '' }}">
-    <a class="nav-link" href="/baby-names/muslim-boy-names">Muslim Boy Names</a>
+<li class="nav-item {{ Request::is('/muslim-boy-names') ? 'active' : '' }}">
+    <a class="nav-link" href="/muslim-boy-names">Muslim Boy Names</a>
 </li>
-<li class="nav-item {{ Request::is('baby-names/most-popular-names') ? 'active' : '' }}">
-    <a class="nav-link" href="/baby-names/most-popular-names">Most Popular Names</a>
+<li class="nav-item {{ Request::is('/most-popular-names') ? 'active' : '' }}">
+    <a class="nav-link" href="/most-popular-names">Most Popular Names</a>
 </li>
 <li class="nav-item {{ Request::is('favorite-names.html') ? 'active' : '' }}">
     <a class="nav-link" href="/favorite-names.html">Favorite Names</a>
@@ -33,30 +33,30 @@
     <div class="dropdown-menu">
         <a class="dropdown-item" href="/baby-names">Muslim Names</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/baby-names/most-favorited-muslim-baby-names">Most Favorited Names</a>
+        <a class="dropdown-item" href="/most-favorited-muslim-baby-names">Most Favorited Names</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/baby-names/boy-names-by-letter.html">Boy Names by Letter</a>
+        <a class="dropdown-item" href="/boy-names-by-letter.html">Boy Names by Letter</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/baby-names/girl-names-by-letter.html">Girl Names by Letter</a>
+        <a class="dropdown-item" href="/girl-names-by-letter.html">Girl Names by Letter</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/baby-names/random-baby-names">Random Names</a>
-        <a class="dropdown-item" href="/baby-names/random-boy-names">Random Boy Names</a>
-        <a class="dropdown-item" href="/baby-names/random-girl-names">Random Girl Names</a>
+        <a class="dropdown-item" href="/random-baby-names">Random Names</a>
+        <a class="dropdown-item" href="/random-boy-names">Random Boy Names</a>
+        <a class="dropdown-item" href="/random-girl-names">Random Girl Names</a>
         <div class="dropdown-divider bg-success"></div>
         <a class="dropdown-item" href="/asma-ul-husna">Asmaul Husna</a>
         <div class="dropdown-divider bg-success"></div>
         <a class="dropdown-item" href="/dua.php">Islamic Dua</a>
         <div class="dropdown-divider bg-success"></div>
-        <a class="dropdown-item" href="/baby-names/short-muslim-baby-names">Short Names</a>
+        <a class="dropdown-item" href="/short-muslim-baby-names">Short Names</a>
         <div class="dropdown-divider bg-success"></div>
-        <a class="dropdown-item" href="/baby-names/three-letter-boy-names">Three Letter Boy Names</a>
-        <a class="dropdown-item" href="/baby-names/three-letter-girl-names">Three Letter Girl Names</a>
+        <a class="dropdown-item" href="/three-letter-boy-names">Three Letter Boy Names</a>
+        <a class="dropdown-item" href="/three-letter-girl-names">Three Letter Girl Names</a>
         <div class="dropdown-divider bg-success"></div>
-        <a class="dropdown-item" href="/baby-names/four-letter-boy-names">Four Letter Boy Names</a>
-        <a class="dropdown-item" href="/baby-names/four-letter-girl-names">Four Letter Girl Names</a>
+        <a class="dropdown-item" href="/four-letter-boy-names">Four Letter Boy Names</a>
+        <a class="dropdown-item" href="/four-letter-girl-names">Four Letter Girl Names</a>
         <div class="dropdown-divider bg-success"></div>
-        <a class="dropdown-item" href="/baby-names/five-letter-boy-names">Five Letter Boy Names</a>
-        <a class="dropdown-item" href="/baby-names/five-letter-girl-names">Five Letter Girl Names</a>
+        <a class="dropdown-item" href="/five-letter-boy-names">Five Letter Boy Names</a>
+        <a class="dropdown-item" href="/five-letter-girl-names">Five Letter Girl Names</a>
         <div class="dropdown-divider bg-success"></div>
     </div>
 </li>

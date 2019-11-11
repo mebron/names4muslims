@@ -3,8 +3,7 @@
 @section('content')
 <ol class="breadcrumb mb-2">
 <li class="breadcrumb-item"><a href="/">Home</a></li>
-<li class="breadcrumb-item"><a href="/baby-names">Baby Names</a></li>
-<li class="breadcrumb-item"><a href="/baby-names/muslim-boy-names">Baby Boy Names</a></li>
+<li class="breadcrumb-item"><a href="/muslim-boy-names">Baby Boy Names</a></li>
 <li class="breadcrumb-item active">Boy Names Letter {{ ucfirst($key) }}</li>
 </ol>
 @if(!$agent->isPhone())

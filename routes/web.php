@@ -20,8 +20,8 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
 Route::get('/baby-names', 'NameController@index');
-Route::get('/baby-names/muslim-girl-names', 'NameController@girls');
-Route::get('/baby-names/muslim-boy-names', 'NameController@boys');
+Route::get('/muslim-girl-names', 'NameController@girls');
+Route::get('/muslim-boy-names', 'NameController@boys');
 Route::get('/name/{slug}.html', 'NameController@info');
 Route::get('/search', 'SearchController@search');
 //static pages
@@ -33,17 +33,17 @@ Route::get('/contacts.html', 'ContactController@index');
 Route::post('contact-us', 'ContactController@SendContact');
 Route::get('comments.html', 'PageController@comments');
 //random names
-Route::get('/baby-names/random-baby-names', 'NameController@randomNames');
-Route::get('/baby-names/random-girl-names', 'NameController@randomGirls');
-Route::get('/baby-names/random-boy-names', 'NameController@randomBoys');
+Route::get('/random-baby-names', 'NameController@randomNames');
+Route::get('/random-girl-names', 'NameController@randomGirls');
+Route::get('/random-boy-names', 'NameController@randomBoys');
 //short names
-Route::get('/baby-names/short-muslim-baby-names', 'ShortNameController@index');
-Route::get('/baby-names/three-letter-boy-names', 'ShortNameController@threeLetterBoys');
-Route::get('/baby-names/three-letter-girl-names', 'ShortNameController@threeLetterGirls');
-Route::get('/baby-names/four-letter-boy-names', 'ShortNameController@fourLetterBoys');
-Route::get('/baby-names/four-letter-girl-names', 'ShortNameController@fourLetterGirls');
-Route::get('/baby-names/five-letter-boy-names', 'ShortNameController@fiveLetterBoys');
-Route::get('/baby-names/five-letter-girl-names', 'ShortNameController@fiveLetterGirls');
+Route::get('/short-muslim-baby-names', 'ShortNameController@index');
+Route::get('/three-letter-boy-names', 'ShortNameController@threeLetterBoys');
+Route::get('/three-letter-girl-names', 'ShortNameController@threeLetterGirls');
+Route::get('/four-letter-boy-names', 'ShortNameController@fourLetterBoys');
+Route::get('/four-letter-girl-names', 'ShortNameController@fourLetterGirls');
+Route::get('/five-letter-boy-names', 'ShortNameController@fiveLetterBoys');
+Route::get('/five-letter-girl-names', 'ShortNameController@fiveLetterGirls');
 //favorites
 Route::post('/favorite/{name}', 'FavoriteController@favorite');
 Route::post('/unfavorite/{name}', 'FavoriteController@unFavorite');
@@ -51,7 +51,7 @@ Route::post('/favoritetemp/{name}', 'FavoriteController@favoriteTemp');
 Route::post('/unfavoritetemp/{name}', 'FavoriteController@unFavoriteTemp');
 Route::post('/isfavorited/{name}', 'FavoriteController@isFavorited');
 Route::get('/favorite-names.html', 'FavoriteController@index');
-Route::get('/baby-names/most-favorited-muslim-baby-names', 'FavoriteController@favorited');
+Route::get('/most-favorited-muslim-baby-names', 'FavoriteController@favorited');
 Route::post('/send-my-favorite-names', 'FavoriteController@sendIt');
 Route::post('/send-saved-names', 'FavoriteController@sendSaved');
 Route::get('/favorite/download', 'FavoriteController@download');
@@ -59,13 +59,13 @@ Route::get('/favorite/download', 'FavoriteController@download');
 Route::get('get-favorites', 'FavoriteController@getFavorites');
 Route::delete('/delete-my-saved-names/{id}', 'FavoriteController@deleteSaved');
 //names by letters
-Route::get('/baby-names/boy-names-by-letter.html', 'NameController@boysLetters');
-Route::get('/baby-names/girl-names-by-letter.html', 'NameController@girlsLetters');
-Route::get('/baby-names/boy-names-starting-with-{c}', 'NameController@boysAlphabet');
-Route::get('/baby-names/girl-names-starting-with-{c}', 'NameController@girlsAlphabet');
-Route::get('/baby-names/browse-baby-names-by-letter/{c}', 'NameController@namesAlphabet');
+Route::get('/boy-names-by-letter.html', 'NameController@boysLetters');
+Route::get('/girl-names-by-letter.html', 'NameController@girlsLetters');
+Route::get('/boy-names-starting-with-{c}', 'NameController@boysAlphabet');
+Route::get('/girl-names-starting-with-{c}', 'NameController@girlsAlphabet');
+Route::get('/browse-baby-names-by-letter/{c}', 'NameController@namesAlphabet');
 //popular and viewed names
-Route::get('/baby-names/most-popular-names', 'NameController@popularNames');
+Route::get('/most-popular-names', 'NameController@popularNames');
 //user
 
 

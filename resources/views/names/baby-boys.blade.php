@@ -95,42 +95,42 @@ data-ad-format="auto"></ins>
 <div class="card-header bg-aqua"><h3>Muslim Boy Names</h3></div>
 <table class="table table-sm">
 <tr>
-<td><a href="/baby-names/boy-names-starting-with-a" title="Muslim Boy Names Start With A" class="btn btn-md btn-lblue">A</a></td>
-<td><a href="/baby-names/boy-names-starting-with-b" title="Muslim Boy Names Start With B" class="btn btn-md btn-lblue">B</a></td>
-<td><a href="/baby-names/boy-names-starting-with-c" title="Muslim Boy Names Start With C" class="btn btn-md btn-lblue">C</a></td>
-<td><a href="/baby-names/boy-names-starting-with-d" title="Muslim Boy Names Start With D" class="btn btn-md btn-lblue">D</a></td>
-<td><a href="/baby-names/boy-names-starting-with-e" title="Muslim Boy Names Start With E" class="btn btn-md btn-lblue">E</a></td>
-<td><a href="/baby-names/boy-names-starting-with-f" title="Muslim Boy Names Start With F" class="btn btn-md btn-lblue">F</a></td>
+<td><a href="/boy-names-starting-with-a" title="Muslim Boy Names Start With A" class="btn btn-md btn-lblue">A</a></td>
+<td><a href="/boy-names-starting-with-b" title="Muslim Boy Names Start With B" class="btn btn-md btn-lblue">B</a></td>
+<td><a href="/boy-names-starting-with-c" title="Muslim Boy Names Start With C" class="btn btn-md btn-lblue">C</a></td>
+<td><a href="/boy-names-starting-with-d" title="Muslim Boy Names Start With D" class="btn btn-md btn-lblue">D</a></td>
+<td><a href="/boy-names-starting-with-e" title="Muslim Boy Names Start With E" class="btn btn-md btn-lblue">E</a></td>
+<td><a href="/boy-names-starting-with-f" title="Muslim Boy Names Start With F" class="btn btn-md btn-lblue">F</a></td>
 </tr>
 <tr>
-<td><a href="/baby-names/boy-names-starting-with-g" title="Muslim Boy Names Start With G" class="btn btn-md btn-lblue">G</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-h" title="Muslim Boy Names Start With H" class="btn btn-md btn-lblue">H</a></td>
-<td><a href="/baby-names/boy-names-starting-with-i" title="Muslim Boy Names Start With I" class="btn btn-md btn-lblue">I</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-j" title="Muslim Boy Names Start With J" class="btn btn-md btn-lblue">J</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-k" title="Muslim Boy Names Start With K" class="btn btn-md btn-lblue">K</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-l" title="Muslim Boy Names Start With L" class="btn btn-md btn-lblue">L</a></td>              
+<td><a href="/boy-names-starting-with-g" title="Muslim Boy Names Start With G" class="btn btn-md btn-lblue">G</a></td>
+<td><a href="/boy-names-starting-with-h" title="Muslim Boy Names Start With H" class="btn btn-md btn-lblue">H</a></td>
+<td><a href="/boy-names-starting-with-i" title="Muslim Boy Names Start With I" class="btn btn-md btn-lblue">I</a></td>
+<td><a href="/boy-names-starting-with-j" title="Muslim Boy Names Start With J" class="btn btn-md btn-lblue">J</a></td>
+<td><a href="/boy-names-starting-with-k" title="Muslim Boy Names Start With K" class="btn btn-md btn-lblue">K</a></td>
+<td><a href="/boy-names-starting-with-l" title="Muslim Boy Names Start With L" class="btn btn-md btn-lblue">L</a></td>
 </tr>
 <tr>
-<td><a href="/baby-names/boy-names-starting-with-m" title="Muslim Boy Names Start With M" class="btn btn-md btn-lblue">M</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-n" title="Muslim Boy Names Start With N" class="btn btn-md btn-lblue">N</a></td>
-<td><a href="/baby-names/boy-names-starting-with-o" title="Muslim Boy Names Start With O" class="btn btn-md btn-lblue">O</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-p" title="Muslim Boy Names Start With P" class="btn btn-md btn-lblue">P</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-q" title="Muslim Boy Names Start With Q" class="btn btn-md btn-lblue">Q</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-r" title="Muslim Boy Names Start With R" class="btn btn-md btn-lblue">R</a></td>              
+<td><a href="/boy-names-starting-with-m" title="Muslim Boy Names Start With M" class="btn btn-md btn-lblue">M</a></td>
+<td><a href="/boy-names-starting-with-n" title="Muslim Boy Names Start With N" class="btn btn-md btn-lblue">N</a></td>
+<td><a href="/boy-names-starting-with-o" title="Muslim Boy Names Start With O" class="btn btn-md btn-lblue">O</a></td>
+<td><a href="/boy-names-starting-with-p" title="Muslim Boy Names Start With P" class="btn btn-md btn-lblue">P</a></td>
+<td><a href="/boy-names-starting-with-q" title="Muslim Boy Names Start With Q" class="btn btn-md btn-lblue">Q</a></td>
+<td><a href="/boy-names-starting-with-r" title="Muslim Boy Names Start With R" class="btn btn-md btn-lblue">R</a></td>
 </tr>
 <tr>
-<td><a href="/baby-names/boy-names-starting-with-s" title="Muslim Boy Names Start With S" class="btn btn-md btn-lblue">S</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-t" title="Muslim Boy Names Start With T" class="btn btn-md btn-lblue">T</a></td>
-<td><a href="/baby-names/boy-names-starting-with-u" title="Muslim Boy Names Start With Q" class="btn btn-md btn-lblue">U</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-v" title="Muslim Boy Names Start With V" class="btn btn-md btn-lblue">V</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-w" title="Muslim Boy Names Start With W" class="btn btn-md btn-lblue">W</a></td> 
-<td><a href="/baby-names/boy-names-starting-with-x" title="Muslim Boy Names Start With X" class="btn btn-md btn-lblue">X</a></td>             
+<td><a href="/boy-names-starting-with-s" title="Muslim Boy Names Start With S" class="btn btn-md btn-lblue">S</a></td>
+<td><a href="/boy-names-starting-with-t" title="Muslim Boy Names Start With T" class="btn btn-md btn-lblue">T</a></td>
+<td><a href="/boy-names-starting-with-u" title="Muslim Boy Names Start With Q" class="btn btn-md btn-lblue">U</a></td>
+<td><a href="/boy-names-starting-with-v" title="Muslim Boy Names Start With V" class="btn btn-md btn-lblue">V</a></td>
+<td><a href="/boy-names-starting-with-w" title="Muslim Boy Names Start With W" class="btn btn-md btn-lblue">W</a></td>
+<td><a href="/boy-names-starting-with-x" title="Muslim Boy Names Start With X" class="btn btn-md btn-lblue">X</a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td><a href="/baby-names/boy-names-starting-with-y" title="Muslim Boy Names Start With Y" class="btn btn-md btn-lblue">Y</a></td>
-<td><a href="/baby-names/boy-names-starting-with-z" title="Muslim Boy Names Start With Z" class="btn btn-md btn-lblue">Z</a></td>
+<td><a href="/boy-names-starting-with-y" title="Muslim Boy Names Start With Y" class="btn btn-md btn-lblue">Y</a></td>
+<td><a href="/boy-names-starting-with-z" title="Muslim Boy Names Start With Z" class="btn btn-md btn-lblue">Z</a></td>
 <td></td>
 <td></td>
 </tr>
