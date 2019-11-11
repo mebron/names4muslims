@@ -30,7 +30,7 @@ class ContactController extends Controller
     	$data['msg'] = $request->message;
     	$data['from'] = $request->email;
     	Mail::to('muslimnames@gmail.com')->send(New ContactMail($data));
-    	Alert::info('Email was sent!');
+    	//Alert::info('Email was sent!');
         return redirect('/');
     }
 

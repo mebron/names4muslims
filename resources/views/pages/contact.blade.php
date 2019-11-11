@@ -7,6 +7,7 @@
             <div class="card card-default">
                 <div class="card-header">Contact Us</div>
                 <form action="/contact-us" method="post">
+                    @csrf
                     <div class="card-body">
                         @if ($errors->any())
                         <div class="alert alert-danger">
@@ -17,8 +18,6 @@
                             </ul>
                         </div>
                         @endif
-
-                        {{ csrf_field() }}
                         <div class="form-group">
                             <input name="name" type="text" class="form-control" id="fromName" placeholder="Your Name"
                                 required>
