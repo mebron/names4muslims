@@ -39,8 +39,8 @@ class NameController extends Controller
     }
     public function girls()
     {
-        SEOTools::setTitle('Islamic baby names. Muslim baby names with meanings in alphabetical order');
-        SEOTools::setDescription("Muslim girl baby names with meanings, choose a unique and beautiful name for your cute baby girl.");
+        SEOTools::setTitle('Muslim Girl Names With Meanings');
+        SEOTools::setDescription("Muslim girl baby names with their meanings, choose a unique and beautiful name for your cute baby girl.");
         //SEOTools::addKeyword(['Muslim Names','muslim girl names', 'muslim girls names', 'baby girls names', 'islamic girl names', 'islamic baby names', 'popular girl names', 'uk muslim girl name']);
         $data['page_title'] = 'Muslim Baby Girl Names';
         $names = Name::where('gender','Girl')->orderBy('name', 'asc')->paginate(25);
