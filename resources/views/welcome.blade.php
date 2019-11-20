@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Muslim Names and Their Meaning</title>
-<meta name=description content="Complete list of Muslim baby names and their meanings. Muslims should choose a beautiful and honorable Islamic name, it is very important in Islam. Names4muslims.com will help you to choose the best Muslim baby name.">
+<title>Muslim Names and Their Meanings</title>
+<meta name=description content="An easy way to find Muslim baby names and their meanings. Muslims should choose a beautiful and honorable Islamic name, it is very important in Islam. Names4muslims.com will help you to choose the best Muslim baby name.">
 <meta name="keywords" content="muslim names, muslim name, muslims, islamic names, baby name, baby muslim name, baby names, baby girl names, baby boy names, muslim names for girls, muslim names for boys, find muslim baby name, baby names and meanings, top baby names, meanings of baby names, child names, arabic name meaning, unique baby names, top 10 names, beautiful names, beautiful baby names, how to pronounce muslim names, list of muslim names, best muslim names "/>
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -17,7 +17,7 @@
 <link href="https://www.names4muslims.com/" rel="home">
 <meta property="og:site_name" content="Names4Muslims.com"/>
 <meta property="og:image" content="https://d3w4b6mljoazo9.cloudfront.net/assets/img/n4m.png">
-<meta property="og:description" content="Muslim names and their meanings. Choose modern, cute and beautiful Islamic names for your baby." />
+<meta property="og:description" content="An easy way to find Muslim names and their meanings. Choose modern, cute and beautiful Islamic names for your baby." />
 <link rel="shortcut icon" href="https://d3w4b6mljoazo9.cloudfront.net/assets/ico/favicon.png">
 <link rel="apple-touch-icon" href="https://d3w4b6mljoazo9.cloudfront.net/assets/ico/apple-touch-icon-144-precomposed.png"/>
 <!-- Styles -->
