@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests;
 use App\Name;
-use App\Hit;
 use Artesaos\SEOTools\Facades\SEOTools;
 use App\NameRating;
 use Carbon\Carbon;
@@ -76,10 +75,7 @@ class NameController extends Controller
         $canonical = 'https://www.names4muslims.com/name/'. str_slug($slug) .'.html';
         $default = $names->name.' is a  Muslim '.$names->gender .' Name. '.$names->name.' Meaning is '. strip_tags($mng);
         $txt = is_null($description) ? $default : $description;
-        $hit = new hit;
-        $hit->name_id = $id;
-        $hit->save();
-        //$names->visits()->increment();
+            //$names->visits()->increment();
 
         SEOTools::setTitle('Meaning of Name '.$names->name);
         SEOTools::setDescription($txt);

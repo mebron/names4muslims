@@ -4,9 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\NameRating;
-use App\Hit;
 use App\Name;
-use DB;
 //use Seo;
 use Jenssegers\Agent\Agent;
 use Carbon\Carbon;
