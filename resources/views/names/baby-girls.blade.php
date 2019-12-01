@@ -7,7 +7,7 @@
   <div class="row">
     @endif
 <div class="col-12 col-lg-8">
-@if (!$agent->isMobile())
+@if (!$agent->isPhone())
 <div class="card mb-2">
 <!-- N4M RESPONSIVE -->
 <ins class="adsbygoogle"
