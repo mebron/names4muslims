@@ -7,18 +7,19 @@
   <div class="row">
     @endif
 <div class="col-12 col-lg-8">
-@if (!$agent->isPhone())
+@if ($agent->isPhone())
+@else
 <div class="card mb-2">
-<!-- N4M RESPONSIVE -->
-<ins class="adsbygoogle"
-style="display:block"
-data-ad-client="ca-pub-9750369232662797"
-data-ad-slot="9868081403"
-data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+  <!-- N4M RESPONSIVE -->
+  <ins class="adsbygoogle"
+  style="display:block"
+  data-ad-client="ca-pub-9750369232662797"
+  data-ad-slot="9868081403"
+  data-ad-format="auto"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
 @endif
 
 <div class="card">
