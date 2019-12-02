@@ -26,12 +26,6 @@ echo json_encode([
 ]);
 ?>
 </script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-9750369232662797",
-          enable_page_level_ads: true
-     });
-</script>
 </head>
 <body>
 

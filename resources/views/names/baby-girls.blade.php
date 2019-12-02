@@ -8,7 +8,7 @@
     @endif
 <div class="col-12 col-lg-8">
 @if ($agent->isPhone())
-**
+
 @else
 <div class="card mb-2">
   <!-- N4M RESPONSIVE -->
