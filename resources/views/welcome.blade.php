@@ -53,7 +53,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 }
 .link-pink { color: #ff99cc!important; }.link-pink:hover { color: #ff6699!important; }.blue-link { color: #99ccff!important; }.blue-link:hover { color: #6699ff!important; }
 </style>
-<link rel="stylesheet" href="https://d3w4b6mljoazo9.cloudfront.net/assets/css/app.css">
+<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -99,9 +99,9 @@ Search
 <div class="col-md-12">
 <h2 class="card-title text-center">Muslim Baby Names</h2>
 <h5 class="card-title text-center text-success">Islamic Baby Names</h5>
-<p class="text-justify" style="font-size: 1.5em; color:#48484A">Muslim names are nothing more than giving a good and beautiful meaning name. Naming a child with a beautiful and honorable name is very important in Islam. Islamic Names and Muslim Names are the same, there is no difference between Islamic names and Muslim names. Islam and Muslims are both words used to describe the religion revealed to the Prophet Muhammed. Islam and Muslim both have the same origin in the Arabic verb s-l-m</p>
-<p class="text-justify" style="font-size: 1.5em; color:#48484A">A Muslim child where ever born, and a person embracing Islam, used to be called in a new name, probably in Arabic Name. Names of prophets, names combined with Asmaul Husna (Names of God), names from history, and the traditional or modern names are being used in this regard.</p>
-<p class="text-justify" style="font-size: 1.5em; color:#48484A">The Prophet always chose names with good and beautiful meanings, even telling people to change their names if they had unpleasant meanings. Give your child the best possible name. Here at Names4Muslims.com, you can find beautiful and unique Muslim baby boy names and Muslim baby girl names.</p>
+<p class="text-justify" style="color:#48484A">Muslim names are nothing more than giving a good and beautiful meaning name. Naming a child with a beautiful and honorable name is very important in Islam. Islamic Names and Muslim Names are the same, there is no difference between Islamic names and Muslim names. Islam and Muslims are both words used to describe the religion revealed to the Prophet Muhammed. Islam and Muslim both have the same origin in the Arabic verb s-l-m</p>
+<p class="text-justify" style="color:#48484A">A Muslim child where ever born, and a person embracing Islam, used to be called in a new name, probably in Arabic Name. Names of prophets, names combined with Asmaul Husna (Names of God), names from history, and the traditional or modern names are being used in this regard.</p>
+<p class="text-justify" style="color:#48484A">The Prophet always chose names with good and beautiful meanings, even telling people to change their names if they had unpleasant meanings. Give your child the best possible name. Here at Names4Muslims.com, you can find beautiful and unique Muslim baby boy names and Muslim baby girl names.</p>
 </div>
 </div>
 <div class="text-center"><a href="{{ url('/muslim-boy-names') }}" class="btn btn-primary" title="Muslim boy name">Muslim Boy Names</a>  <a href="{{ url('/muslim-girl-names') }}" class="btn btn-danger" title="Muslim girl name">Muslim Girl Names</a></div>

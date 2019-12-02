@@ -29,7 +29,7 @@ echo json_encode([
 </head>
 <body>
 
-<div id="app">
+<div id="app" class="white-bg">
 @if (!$agent->isMobile())
 <header class="white-bg">
 <div class="container">

@@ -1,5 +1,5 @@
 body {
-    background: #f7f7f7;
+    background: #fff;
     font-weight: 400;
     position: relative;
     min-height: 100%;
@@ -17,6 +17,9 @@ footer, .mnu a:hover{color: #f4645f  !important;}
     min-height: 60px;
 }
 
+.active {
+    background:#64B4FD !important;
+ }
 pre {
     tab-size:8
 }

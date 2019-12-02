@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark p-3 text-white" style="font-size: 1.1em; background-color: #3FA338">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light p-0" style="font-size: 1.1em; background-color: #E3F2FD !important; border: 1px solid #BBDEFB !important;">
 <div class="container">
 <a class="navbar-brand" href="{{ url('/') }}"> <span class="d-lg-none">Names4Muslims.com</span></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,8 +66,8 @@
 <li class="nav-item"><a class="btn btn-success" data-toggle="modal" data-target="#searchForm"> <i class="fa fa-search" aria-hidden="true"></i></a></li>
 <!-- Authentication Links -->
 @if (Auth::guest())
-<li class="nav-item"><a class="nav-link text-white" href="/login">Login</a></li>
-<li class="nav-item"><a class="nav-link text-white" href="/register">Register</a></li>
+<li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
 @else
 <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
