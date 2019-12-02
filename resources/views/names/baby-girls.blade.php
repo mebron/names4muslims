@@ -24,16 +24,16 @@
 @endif
 
 <div class="card">
-<div class="card-header">
-<h4 class="text-xs-center">Muslim Girl Names A to Z Listing - Page: {{ Request::query('page') }}</h4>
+<div class="card-header bg-girl">
+<h4 class="text-xs-center">Muslim Girl Names A to Z Listing - Page: {{ Request::query('page') ?? '1' }}</h4>
 </div>
 <div class="card-body">
 @foreach($names as $name)
 
 <div class="row border mb-2 shadow-sm">
-  <div class="col-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
-    <a class="text-white stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a></div>
-  <div class="col-11">
+  <div class="col-2 col-md-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
+    <a class="text-girl stretched-link" href="#" data-toggle="modal" data-target="#exampleModalCenter"><h3 class="p-0">{{ $name->name[0] }}</h3></a></div>
+  <div class="col-10 col-md-11">
     <div class="row">
       <div class="col-12 pt-1 "><a class="name" href="{{ url('/name',$name->slug)}}.html">{{ $name->name }}</a>
       </div>
@@ -82,7 +82,7 @@
 <div class="theiaStickySidebar">
 @empty (Request::query('page'))
 <div class="card mb-2">
-<div class="card-header bg-warning"><h2 class="text-xs-center">Muslim Baby Girl Names</h2></div>
+<div class="card-header bg-girl"><h2 class="text-xs-center">Muslim Baby Girl Names</h2></div>
 <div class="card-body"><p><strong>Muslim Girl Names</strong> with their meanings. Find Beautiful Girl Name for Muslim baby girl. Choose an unique <strong>Muslim girl name</strong> for your baby girl from the list of Girl Baby Names.</p>
 <p>When you found a Beautiful Girl Name click 'Favorite' button to add names into your favorite list and view later</p>
 </div>
@@ -110,5 +110,23 @@ data-ad-format="auto"></ins>
 </div>
 </div>
 </div> <!-- endof right-side -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-girl">
+        <h3 class="text-xs-center">Girl Names by Letters</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        @include('partials.girls-modal-letters')
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 @endsection

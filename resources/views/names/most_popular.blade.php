@@ -22,7 +22,7 @@ data-ad-format="auto"></ins>
 <div class="row border mb-2 shadow-sm">
   <div class="col-1 vertical-align text-white position-relative {{ $name->names->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
     <a class="text-white stretched-link" href="{{ url('/name',$name->names->slug)}}.html">{{ $name->names->name[0] }}</a></div>
-  <div class="col-11">
+  <div class="col-10 col-md-11">
     <div class="row">
       <div class="col-12 pt-1 "><a class="name" href="{{ url('/name',$name->names->slug)}}.html">{{ $name->names->name }}</a>
       </div>

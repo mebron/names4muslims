@@ -8,7 +8,7 @@
 
 @foreach($names as $name)
 <div class="row border mb-2 shadow-sm">
-    <div class="col-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
+    <div class="col-2 col-md-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
         <a class="text-white stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a></div>
     <div class="col-11">
         <div class="row">

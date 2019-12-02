@@ -20,7 +20,7 @@
     @foreach($names as $name)
 
     <div class="row border mb-2 shadow-sm">
-      <div class="col-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
+      <div class="col-2 col-md-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
         <a class="text-white stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a></div>
       <div class="col-11">
         <div class="row">
@@ -68,11 +68,11 @@
       <div class="card-body">Sorry, We are not found any names on your favorite list, please add some <a
           href="/most-popular-names.html">names</a> first!. Or <a href="/login" title="Log in to Names4Muslims.com">log
           in</a> to view your saved favorite names.</div>
-    </div>  
+    </div>
   @endif
   </div>
   </div>
-  
+
   @if(Auth::check() AND count($names) > 9)
   <div class="alert alert-warning-alt" role="alert">Hello <strong>{{Auth::user()->name }}</strong>, wold you like to
     share your favorite list to public? <button class="btn btn-danger" data-toggle="modal" data-target="#myLists"><i
@@ -163,7 +163,7 @@
         <form action="/send-my-favorite-names" method="post">
           @endif
           {{ csrf_field() }}
-          <div class="modal-body">            
+          <div class="modal-body">
             <div class="form-group">
               <label for="title">Title of your lists:</label>
               <input name="title" type="text" class="form-control" id="title" placeholder="Title for your lists"

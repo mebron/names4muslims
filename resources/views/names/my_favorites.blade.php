@@ -5,10 +5,10 @@
     <div class="card-header card-inverse bg-success"><h2 class="text-xs-center">My Saved Names</h2></div>
 
       <div class="card-body"  style="min-height:500px;">
-        
+
           @foreach($names as $name)
           <div class="row border mb-2 shadow-sm">
-            <div class="col-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
+            <div class="col-2 col-md-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
               <a class="text-white stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a></div>
             <div class="col-11">
               <div class="row">
@@ -36,7 +36,7 @@
               </div>
             </div>
           </div>
-          
+
           @if($loop->index == 11)
           <div class="row">
             <div class="col-12 p-0">
@@ -51,15 +51,15 @@
           @endif
           @endforeach
           <hr>
-          <div class="row">                
+          <div class="row">
             <div class="col-md-4"><button class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope" aria-hidden="true"></i> Email Favorites</button></div>
             <div class="col-md-4"><a class="btn btn-info btn-block" href="/favorite/download"><i class="fa fa-download" aria-hidden="true"></i> Download</a></div>
             <div class="col-md-4"></div>
           </div>
-        
-        <!-- What are you looking :) -->                   
+
+        <!-- What are you looking :) -->
       </div>
-    </div> 
+    </div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Email my saved names" aria-hidden="true">
