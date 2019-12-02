@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light p-0" style="font-size: 1.1em; background-color: #E3F2FD !important; border: 1px solid #BBDEFB !important;">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light p-0 mb-3" style="font-size: 1.1em; background-color: #E3F2FD !important; border: 1px solid #BBDEFB !important;">
 <div class="container">
 <a class="navbar-brand" href="{{ url('/') }}"> <span class="d-lg-none">Names4Muslims.com</span></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
