@@ -104,7 +104,7 @@ Search
 <p class="text-justify" style="color:#48484A">The Prophet always chose names with good and beautiful meanings, even telling people to change their names if they had unpleasant meanings. Give your child the best possible name. Here at Names4Muslims.com, you can find beautiful and unique Muslim baby boy names and Muslim baby girl names.</p>
 </div>
 </div>
-<div class="text-center"><a href="{{ url('/muslim-boy-names') }}" class="btn btn-primary" title="Muslim boy name">Muslim Boy Names</a>  <a href="{{ url('/muslim-girl-names') }}" class="btn btn-danger" title="Muslim girl name">Muslim Girl Names</a></div>
+<div class="text-center"><a href="{{ url('/muslim-boy-names') }}" class="btn btn-boy mb-2" title="Muslim boy name">Muslim Boy Names</a>  <a href="{{ url('/muslim-girl-names') }}" class="btn btn-pink mb-2" title="Muslim girl name">Muslim Girl Names</a></div>
 </div>
 </section>
 <section class="py-5">
