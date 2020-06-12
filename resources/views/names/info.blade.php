@@ -29,7 +29,7 @@
             <div class="card-header text-white">
                 <span class="text-center">
                     <h2 class="{{ ($names->gender ==='Boy') ? 'text-primary' : 'text-danger' }} display-4">{{ $names->name }}</h2>
-                </span>                 
+                </span>
             </div>
 
             <div class="card-body">
@@ -71,14 +71,14 @@
                                     <span class="text-warning"><i class="fa fa-exclamation-triangle"
                                             aria-hidden="true"></i></span>
                                     @if( Auth::id() ==1)
-                                    <div> <a href="/mypanel/verify/{{ $names->id }}">Verify</a></div>
+                                    <div> <a href="/admin/verify/{{ $names->id }}">Verify</a></div>
                                     @endif
                                     @endif</td>
                             </tr>
                             <tr>
                                 <td>Alternate Spelling</td>
                                 <td>{!! $names->alternate ?? 'Not available' !!}</td>
-                            </tr>                        
+                            </tr>
                             <tr>
                                 <td>Add to favorites</td>
                                 <td>
@@ -97,7 +97,7 @@
                         </tbody>
                     </table>
                     @if( Auth::id() ==1)
-                    <div><a href="/mypanel/names/{{ $names->id }}/edit">Edit</a></div>
+                    <div><a href="/admin/names/{{ $names->id }}/edit">Edit</a></div>
                     @endif
                     @if (Auth::check())
                     <div><a href="/add-name-faces/{{ $names->id }}"><i class="fa fa-camera" aria-hidden="true"></i> Add

@@ -23,9 +23,10 @@
   </div>
 @endif
 
-<div class="card">
+<div class="card  mb-3">
 <div class="card-header bg-girl">
-<h4 class="text-xs-center">Muslim Girl Names A to Z Listing - Page: {{ Request::query('page') ?? '1' }}</h4>
+  <h2>Muslim Baby Girl Beautiful Names</h2>
+<p>Muslim Girl Names A to Z List - Page: {{ Request::query('page') ?? '1' }} of {{ $names->lastPage() }} Pages</p>
 </div>
 <div class="card-body">
 @foreach($names as $name)
@@ -91,10 +92,10 @@
 
 <!-- end letter menu -->
 <!-- dua -->
-<div class="card text-white bg-success mb-3">
-  <div class="card-header">{{ $dua->name }}</div>
+<div class="card mb-3">
+  <div class="card-header bg-boy">{{ $dua->name }}</div>
   <div class="card-body"><p>{{ $dua->translation }}</p></div>
-  <div class="card-footer"><a href="{{ URL('/dua.php') }}">More Duas</a></div>
+  <div class="card-footer bg-girl"><a href="{{ URL('/dua.php') }}">More Duas</a></div>
 </div>
 <!-- dua end -->
 <div class="card mb-2">

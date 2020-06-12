@@ -4,8 +4,8 @@
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="contenft">
-            <div class="card">
-                <div class="card-header">
+            <div class="card mb-3">
+                <div class="card-header bg-boy">
                     <h1>Circumcision</h1>
                 </div>
                 <div class="card-body">
@@ -15,8 +15,8 @@
                 </div>
             </div>
 
-            <div class="card card-default">
-                <div class="card-header">
+            <div class="card mb-3">
+                <div class="card-header bg-boy">
                     <h2>How is circumcision done?</h2>
                 </div>
                 <div class="card-body">
@@ -27,8 +27,8 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header">
+            <div class="card mb-3">
+                <div class="card-header bg-boy">
                     <h2>Circumcision might have various health benefits, including:</h2>
                 </div>
                 <div class="card-body">
@@ -45,6 +45,6 @@
             </div>
         </div>
     </div>
- 
+
     </div>
 @endsection

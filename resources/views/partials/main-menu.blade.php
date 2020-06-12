@@ -63,7 +63,7 @@
 </ul>
 <!-- Right Side Of Navbar -->
 <ul class="nav justify-content-end">
-<li class="nav-item"><a class="nav-link btn-pink py-2" data-toggle="modal" data-target="#searchForm" style="margin-bottom: -4px"> <i class="fa fa-search" aria-hidden="true"></i></a></li>
+<li class="nav-item"><a class="nav-link btn-circle btn btn-md btn-pink py-2" data-toggle="modal" data-target="#searchForm" style="margin-bottom: -4px"> <i class="fa fa-search" aria-hidden="true"></i></a></li>
 <!-- Authentication Links -->
 @if (Auth::guest())
 <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>

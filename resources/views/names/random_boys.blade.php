@@ -2,7 +2,10 @@
 
 @section('content')
 <div class="card">
-<div class="card-header bg-primary text-white"><h2>Random Boy Name Generator</h2></div>
+<div class="card-header bg-gradient-primary text-white">
+    <h1>Boy Name Generator</h1>
+    <p>The Boy Name Generator Will Generate Some Beautiful Names For Baby Boys</p>
+</div>
 <div class="card-body">
 <!-- nm -->
 @foreach($names as $name)
@@ -23,7 +26,7 @@
                 false)
                 <span class="text-warning" title="Shortlisted"><i class="fas fa-star"></i></span>
                 @else
-                <span title="Add to Favorites" id="{{ $name->id }}" class="{{ Auth::check() ? "myfav" : "fav" }}"><i
+                <span title="Add to Favorites" id="{{ $name->id }}" class="{{ Auth::check() ? "myfav" : "fav" }} blue-link"><i
                         class="far fa-star"></i></span>
                 @endif
             </div>
@@ -53,9 +56,9 @@
 </div>
 <div class="card-footer">
 <div class="row">
-<div class="col-md-4"><a href="/baby-names/random-boy-names" class="btn btn-block btn-boy mb-2">Generate Boy Names</a></div>
-<div class="col-md-4"><a href="/baby-names/random-girl-names" class="btn btn-block btn-pink mb-2">Generate Girl Names</a></div>
-<div class="col-md-4"><a href="/baby-names/random-baby-names" class="btn btn-block btn-success mb-2">Generate Names</a></div>
+<div class="col-md-4"><a href="/random-boy-names" class="btn btn-block btn-boy mb-2">Generate Boy Names</a></div>
+<div class="col-md-4"><a href="/random-girl-names" class="btn btn-block btn-pink mb-2">Generate Girl Names</a></div>
+<div class="col-md-4"><a href="/random-baby-names" class="btn btn-block btn-success mb-2">Generate Names</a></div>
 </div>
 </div>
 </div>

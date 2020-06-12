@@ -180,7 +180,7 @@ data-ad-format="auto"></ins>
 <!-- end letter menu -->
 <!-- dua -->
 <div class="card mb-3">
-  <div class="card-header text-white" style="background-color: #87889c;"><i class="fas fa-praying-hands"></i> {{ $dua->name }}</div>
+  <div class="card-header bg-boy"><i class="fas fa-praying-hands"></i> {{ $dua->name }}</div>
   <div class="card-body">
     <blockquote class="blockquote">
       {!! $dua->dua !!}
@@ -188,7 +188,7 @@ data-ad-format="auto"></ins>
       </blockquote>
     <p class="lead">{{ $dua->translation }}</p>
   </div>
-  <div class="card-footer" style="background-color: #2e4482;"><a class="text-white" href="{{ URL('/dua.php') }}">More Duas</a></div>
+  <div class="card-footer bg-girl"><a class="text-dark" href="{{ URL('/dua.php') }}">More Duas ...</a></div>
 </div>
 <!-- dua end -->
 </div>
@@ -197,8 +197,11 @@ data-ad-format="auto"></ins>
 </div>
 <div id="inbox">
 <div class="" id="favCounter">
-<div class="fa-3x">
-    <a href="#" id="pop"><span class="fa-layers fa-fw"><i class="fas fa-heart text-success"></i><span class="fa-layers-counter fa-layers-bottom-left count" data-fa-transform="shrink-11.5"><favcounter></favcounter></span></span></a>
+<div class="fa-2x">
+  <a href="#" class="text-girl" id="pop">
+    <span class="fa-layers fa-fw">
+    <i class="fas fa-heart"></i>
+    <span class="fa-layers-text fa-inverse count" data-fa-transform="shrink-11.5" style="font-weight:900">{{ $favCount }}</span></span></a>
 </div>
 </div>
 </div>
@@ -218,7 +221,7 @@ data-ad-format="auto"></ins>
 <div class="modal fade" id="searchForm" tabindex="-1" role="dialog" aria-labelledby="searchForm" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-boy">
         <h5 class="modal-title" id="searchModalLabel">Search</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -233,7 +236,7 @@ data-ad-format="auto"></ins>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" aria-expanded="false">Search</button>
+        <button type="submit" class="btn btn-pink" aria-expanded="false">Search</button>
       </div>
   </form>
     </div>
@@ -241,6 +244,7 @@ data-ad-format="auto"></ins>
 </div>
 <!-- Scripts -->
 <script src="//cdn.names4muslims.com/assets/js/app.js"></script>
+<script src="https://kit.fontawesome.com/e0ca5ae3cb.js" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/e0ca5ae3cb.js" defer></script>
 <script>
 $(document).ready(function () {

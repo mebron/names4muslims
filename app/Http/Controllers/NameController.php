@@ -9,6 +9,7 @@ use App\Name;
 use Artesaos\SEOTools\Facades\SEOTools;
 use App\NameRating;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 class NameController extends Controller
 {
     public function __construct()
@@ -38,14 +39,14 @@ class NameController extends Controller
     }
     public function girls()
     {
-        SEOTools::setTitle('Muslim Girl Names With Meanings');
+        SEOTools::setTitle('Muslim Girl Beautiful Names With Meanings');
         SEOTools::setDescription("Muslim girl baby names with their meanings, choose a unique and beautiful name for your cute baby girl.");
         //SEOTools::addKeyword(['Muslim Names','muslim girl names', 'muslim girls names', 'baby girls names', 'islamic girl names', 'islamic baby names', 'popular girl names', 'uk muslim girl name']);
-        $data['page_title'] = 'Muslim Baby Girl Names';
+        $data['page_title'] = 'Muslim Baby Girl Beautiful Names';
         $names = Name::where('gender','Girl')->orderBy('name', 'asc')->paginate(25);
         if($names->currentPage() > 1)
         {
-            SEOTools::setTitle('Muslim Baby Girl Names Page - '.$names->currentPage());
+            SEOTools::setTitle('Muslim Baby Girl Beautiful Names List Page - '.$names->currentPage());
             SEOTools::setDescription("Muslim Girl Baby Names with Meanings, Choose a Unique and Beautiful Name for Your Cute Baby Girl Showing Page - ".$names->currentPage());
         }
         return view('names.baby-girls', compact('names', 'data'));
@@ -70,9 +71,9 @@ class NameController extends Controller
         $names = Name::where('slug', '=', $slug)->firstOrFail();
         $id = $names->id;
         $description = $names->meta_description;
-        $mng = str_limit($names->meaning, 50);
+        $mng = Str::limit($names->meaning, 50);
         $slug = strtolower($slug);
-        $canonical = 'https://www.names4muslims.com/name/'. str_slug($slug) .'.html';
+        $canonical = 'https://www.names4muslims.com/name/'. Str::slug($slug) .'.html';
         $default = $names->name.' is a  Muslim '.$names->gender .' Name. '.$names->name.' Meaning is '. strip_tags($mng);
         $txt = is_null($description) ? $default : $description;
             //$names->visits()->increment();
@@ -144,8 +145,8 @@ class NameController extends Controller
     //RANDOM NAMES
     public function randomNames()
     {
-        SEOTools::setTitle('Generate a list of Random Baby Names');
-        SEOTools::setDescription("The random name generator can suggest names for your babies");
+        SEOTools::setTitle('Generate a list of Baby Names');
+        SEOTools::setDescription("The Name Generator can Suggest Beautiful Names For Your Newborn Baby");
 
         $collection = Name::all();
         $names = $collection->random(10);
@@ -153,8 +154,8 @@ class NameController extends Controller
     }
     public function randomGirls()
     {
-        SEOTools::setTitle('List of random Muslim girl names');
-        SEOTools::setDescription("The Girls random name generator can suggest names for baby girls");
+        SEOTools::setTitle('Auto Generate Muslim Girl Names');
+        SEOTools::setDescription("The Girls Name Generator Will Create Some Beautiful Names For Baby Girls");
 
         $collection = Name::where('gender','Girl')->get();
         $names = $collection->random(10);
@@ -162,8 +163,8 @@ class NameController extends Controller
     }
     public function randomBoys()
     {
-        SEOTools::setTitle('List of random Muslim boy names');
-        SEOTools::setDescription("The Boys random name generator can suggest names for baby boys");
+        SEOTools::setTitle('Muslim Boy Names Generator');
+        SEOTools::setDescription("The Boy Name Generator Will Generate Some Beautiful Names For Baby Boys");
 
         $collection = Name::where('gender','Boy')->get();
         $names = $collection->random(10);

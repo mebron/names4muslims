@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="card mb-2">
+<div class="card mb-3">
 <!-- N4M RESPONSIVE -->
 <ins class="adsbygoogle"
 style="display:block"
@@ -12,7 +12,7 @@ data-ad-format="auto"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-<div class="card">
+<div class="card mb-3">
 <div class="card-header text-white" style="background-color: #C2D985;"><h2>Muslim Baby Names</h2></div>
 <div class="card-body">
 @foreach($names as $name)

@@ -4,7 +4,7 @@
 @if ($agent->isMobile())
 <div class="row no-gutters">
 @else
-<div class="row">
+<div class="row mb-3">
 @endif
 <div class="col-12 col-lg-8">
 <ol class="breadcrumb mb-2">
@@ -25,9 +25,10 @@ data-ad-format="auto"></ins>
 </script>
 </div>
 @endif
-<div class="card">
-<div class="card-header">
-<h4 class="text-xs-center">Muslim Boy Names A-Z Listing - Page: {{ Request::query('page') }}</h4>
+<div class="card  mb-3">
+<div class="card-header bg-boy">
+  <h2>Muslim Baby Boy Names</h2>
+<p>Muslim Baby Boy Names A-Z List Page {{ Request::query('page') }} of {{ $names->lastPage() }} Pages</p>
 </div>
 <div class="card-body">
 @foreach($names as $name)
@@ -84,7 +85,7 @@ data-ad-format="auto"></ins>
 <div class="theiaStickySidebar">
 @empty (Request::query('page'))
 <div class="card mb-2">
-<div class="card-header text-white bg-primary"><h2 class="text-xs-center">Muslim Boy Names</h2></div>
+<div class="card-header bg-boy"><h2 class="text-xs-center">Muslim Boy Names</h2></div>
 <div class="card-body"><p><strong>Muslim Baby Boy Name</strong> with Meanings. Alphabetical list of <strong>Baby Boy Names</strong> for <strong>Muslim babies</strong>. Choose an <strong>Islamic/Muslim</strong> baby name from our Baby Boy names list.</p>
 <p>If you found any nice and beautiful <strong>Baby Boy Name</strong> from our best collections of Muslim Boy Names, then click the favorite button to shortlist your selected names and you can view the names collection later.</p>
 </div>
@@ -92,7 +93,7 @@ data-ad-format="auto"></ins>
 @endempty
 
 <div class="card mb-2">
-<div class="card-header bg-aqua"><h3>Muslim Boy Names</h3></div>
+<div class="card-header bg-boy"><h3>Muslim Boy Names</h3></div>
 <table class="table table-sm">
 <tr>
 <td><a href="/boy-names-starting-with-a" title="Muslim Boy Names Start With A" class="btn btn-md btn-lblue">A</a></td>
@@ -137,10 +138,10 @@ data-ad-format="auto"></ins>
 </table>
 </div>
 <!-- dua -->
-<div class="card text-white bg-success mb-3">
-  <div class="card-header">{{ $dua->name }}</div>
+<div class="card mb-3">
+  <div class="card-header text-white bg-success">{{ $dua->name }}</div>
   <div class="card-body"><p>{{ $dua->translation }}</p></div>
-  <div class="card-footer"><a href="{{ URL('/dua.php') }}">More Duas</a></div>
+  <div class="card-footer bg-girl"><a href="{{ URL('/dua.php') }}">More Duas ...</a></div>
 </div>
 <!-- dua end -->
 <!-- end letter menu -->

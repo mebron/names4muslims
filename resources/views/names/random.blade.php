@@ -2,15 +2,16 @@
 
 @section('content')
 <div class="card">
-    <div class="card-header bg-warning text-white">
-        <h2>Random Baby Name Generator</h2>
+    <div class="card-header bg-gradient-warning text-white">
+        <h1>Baby Name Generator</h1>
+        <p>The Name Generator can Suggest Beautiful Names For Your Newborn Baby</p>
     </div>
     <div class="card-body">
         @foreach($names as $name)
         <div class="row border mb-2 shadow-sm">
             <div
                 class="col-1 vertical-align text-white position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
-                <a class="text-white stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a>
+                <a class="text-dark stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a>
             </div>
             <div class="col-11">
                 <div class="row">
@@ -56,11 +57,11 @@
         @endforeach
         <div class="card-footer">
             <div class="row">
-                <div class="col-md-4"><a href="/baby-names/random-baby-names"
+                <div class="col-md-4"><a href="/random-baby-names"
                         class="btn btn-block btn-success mb-2">Generate Names</a></div>
-                <div class="col-md-4"><a href="/baby-names/random-girl-names"
+                <div class="col-md-4"><a href="/random-girl-names"
                         class="btn btn-block btn-pink mb-2">Generate Girl Names</a></div>
-                <div class="col-md-4"><a href="/baby-names/random-boy-names" class="btn btn-block btn-boy mb-2">Generate
+                <div class="col-md-4"><a href="/random-boy-names" class="btn btn-block btn-boy mb-2">Generate
                         Boy Names</a></div>
             </div>
         </div>

@@ -2,13 +2,16 @@
 
 @section('content')
 <div class="card">
-<div class="card-header bg-dark text-white"><h2>Random Girl Name Generator</h2></div>
+<div class="card-header bg-girl text-dark">
+    <h1>Girl Name Generator</h1>
+    <p>The Girls Name Generator Will Create Some Beautiful Names For Baby Girls</p>
+</div>
 <div class="card-body">
 <!-- nm -->
 @foreach($names as $name)
 <div class="row border mb-2 shadow-sm">
     <div class="col-2 col-md-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
-        <a class="text-white stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a></div>
+        <a class="text-dark stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a></div>
     <div class="col-11">
         <div class="row">
             <div class="col-12 pt-1 "><a class="name" href="{{ url('/name',$name->slug)}}.html">{{ $name->name }}</a>
@@ -21,9 +24,9 @@
             <div class="col-2 text-right" id="fav">
                 @if (( Session::get('favorites')) && ($key = array_search($name->id, Session::get('favorites'))) !==
                 false)
-                <span class="text-warning" title="Shortlisted"><i class="fas fa-star"></i></span>
+                <span class="text-girl" title="Shortlisted"><i class="fas fa-star"></i></span>
                 @else
-                <span title="Add to Favorites" id="{{ $name->id }}" class="{{ Auth::check() ? "myfav" : "fav" }}"><i
+                <span title="Add to Favorites" id="{{ $name->id }}" class="{{ Auth::check() ? "myfav" : "fav" }} text-girl"><i
                         class="far fa-star"></i></span>
                 @endif
             </div>
@@ -53,9 +56,9 @@
 </div>
 <div class="card-footer">
 <div class="row">
-<div class="col-md-4"><a href="/baby-names/random-girl-names" class="btn btn-block btn-pink mb-2">Generate Girl Names</a></div>
-<div class="col-md-4"><a href="/baby-names/random-boy-names" class="btn btn-block btn-boy mb-2">Generate Boy Names</a></div>
-<div class="col-md-4"><a href="/baby-names/random-baby-names" class="btn btn-block btn-success mb-2">Generate Names</a></div>
+<div class="col-md-4"><a href="/random-girl-names" class="btn btn-block btn-pink mb-2">Generate Girl Names</a></div>
+<div class="col-md-4"><a href="/random-boy-names" class="btn btn-block btn-boy mb-2">Generate Boy Names</a></div>
+<div class="col-md-4"><a href="/random-baby-names" class="btn btn-block btn-success mb-2">Generate Names</a></div>
 </div>
 </div>
 </div>

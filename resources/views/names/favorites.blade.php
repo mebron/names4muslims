@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="card">
+<div class="card  mb-3">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- N4M RESPONSIVE -->
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9750369232662797" data-ad-slot="9868081403"
@@ -11,7 +11,7 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
 </div>
-<div class="card">
+<div class="card  mb-3">
   <div class="card-header text-white" style="background-color: #C2D985;">
     <h2 class="text-xs-center">Favorite Names</h2>
   </div>
@@ -78,7 +78,7 @@
     share your favorite list to public? <button class="btn btn-danger" data-toggle="modal" data-target="#myLists"><i
         class="fa fa-newspaper-o" aria-hidden="true"></i> Publish my lists</button></div>
   @endif
-  <div class="card card-default">
+  <div class="card card-default  mb-3">
     <div class="card-body">
       <div class="row">
         <div class="col-md-4 mb-3"><button class="btn btn-primary btn-block" data-toggle="modal"

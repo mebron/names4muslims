@@ -52,16 +52,16 @@ echo json_encode([
 <div class="container pt-2">
 @endif
 @yield('content')
-</div>
 <div id="inbox">
-  <div class="" id="favCounter">
-    <div class="fa-3x">
-      <a href="#" id="pop"><span class="fa-layers fa-fw"><i class="fas fa-heart text-success"></i><span
-            class="fa-layers-counter fa-layers-bottom-left count" data-fa-transform="shrink-11.5">
-            <favcounter></favcounter>
-          </span></span></a>
-    </div>
-  </div>
+<div class="" id="favCounter">
+<div class="fa-2x">
+  <a href="#" class="text-girl" id="pop">
+    <span class="fa-layers fa-fw">
+    <i class="fas fa-heart"></i>
+    <span class="fa-layers-text fa-inverse count" data-fa-transform="shrink-11.5" style="font-weight:900">{{ $favCount }}</span></span></a>
+</div>
+</div>
+</div>
 </div>
 <footer class="pt-2">
 <div class="container">
@@ -78,7 +78,7 @@ echo json_encode([
 <div class="modal fade" id="searchForm" tabindex="-1" role="dialog" aria-labelledby="searchForm" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-boy">
         <h5 class="modal-title" id="searchModalLabel">Search</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -93,7 +93,7 @@ echo json_encode([
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" aria-expanded="false">Search</button>
+        <button type="submit" class="btn btn-pink" aria-expanded="false">Search</button>
       </div>
   </form>
     </div>
@@ -123,7 +123,7 @@ ga('send', 'pageview');
 <script>
   $('#pop').popover({
     html: true,
-    placement: "left",
+    placement: "auto",
     content: function(){
         $.ajax({
             type: 'GET',

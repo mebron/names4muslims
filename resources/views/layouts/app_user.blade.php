@@ -60,25 +60,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 @yield('content')
 </div>
 <div id="inbox">
-<div class="fab btn-group show-on-hover dropup">
-<div data-toggle="tooltip" data-placement="left" title="My Favorites" style="margin-left: 42px;">
-<button type="button" class="btn btn-primary btn-io dropdown-toggle align-middle" data-toggle="dropdown">
-<span class="fa-stack fa-2x">
-<i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
-<i class="fa fa-heart fa-stack-1x fa-inverse fab-primary"></i>
-<i class="fa fa-heart-o fa-stack-1x fa-inverse fab-secondary"></i>
-<span class="count fa fa-stack-1x" style="font-size:11px;color:#000;">{{ $favCount }}</span>
-</span>
-</button></div>
-<ul class="dropdown-menu dropdown-menu-right" role="menu">
-<li><a href="/muslim-boy-names" data-toggle="tooltip" data-placement="left" title="Muslim Boy Names"><i class="fa fa-mars" aria-hidden="true"></i></a></li>
-<li><a href="/muslim-girl-names" data-toggle="tooltip" data-placement="left" title="Muslim Girl Names"><i class="fa fa-venus" aria-hidden="true"></i></a></li>
-<li><a href="/favorite-names" data-toggle="tooltip" data-placement="left" title="My Favorites"><i class="fa fa-star-o"></i></a></li>
-<li><a href="/" data-toggle="tooltip" data-placement="left" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-</ul>
+<div class="" id="favCounter">
+<div class="fa-2x">
+  <a href="#" class="text-girl" id="pop">
+    <span class="fa-layers fa-fw">
+    <i class="fas fa-heart"></i>
+    <span class="fa-layers-text fa-inverse count" data-fa-transform="shrink-11.5" style="font-weight:900">{{ $favCount }}</span></span></a>
 </div>
 </div>
-<footer class="pt-2">
+</div>
+<footer class="pt-2 fixed-bottom">
 <div class="container">
 <div class="row">
 <div class="col-md-4">
@@ -93,7 +84,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 <div class="modal fade" id="searchForm" tabindex="-1" role="dialog" aria-labelledby="searchForm" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-boy">
         <h5 class="modal-title" id="searchModalLabel">Search</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -108,7 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" aria-expanded="false">Search</button>
+        <button type="submit" class="btn btn-pink" aria-expanded="false">Search</button>
       </div>
   </form>
     </div>
