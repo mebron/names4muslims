@@ -55,6 +55,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', end
 .underline a{ text-decoration: underline !important}
 </style>
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+<script data-ad-client="ca-pub-9750369232662797" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W9W26C9');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -346,22 +354,6 @@ Search
 			</div>
 </div>
 </div>
-
-
-<div class="card mb-3">
-<div class="card-body">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- N4M-HOME -->
-<ins class="adsbygoogle"
-style="display:block"
-data-ad-client="ca-pub-9750369232662797"
-data-ad-slot="1464522205"
-data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-</div>
 <div class="card mb-3 text-center">
 <div class="card-header text-white bg-info"><h4 class="text-center">Short Names</h4></div>
 <div class="card-body">
@@ -571,13 +563,6 @@ $(document).ready(function(){
     });
 });
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W9W26C9');</script>
-<!-- End Google Tag Manager -->
 @include('sweetalert::alert')
 </body>
 </html>
