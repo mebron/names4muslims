@@ -11,7 +11,6 @@ try {
     window.$ = window.jQuery = require('jquery');
     require('./ajax');
     require('jscroll');
-    window.swal = require('sweetalert');
     window.theiaStickySidebar = require('theia-sticky-sidebar');
 
     require('bootstrap');

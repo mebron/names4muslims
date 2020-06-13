@@ -284,7 +284,7 @@ ga('send', 'pageview');
     }
 });
 </script>
-@include('sweet::alert')
+@include('sweetalert::alert')
 @yield('scripts')
 </body>
 </html>

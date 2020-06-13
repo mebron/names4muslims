@@ -22,7 +22,7 @@
     <div class="row border mb-2 shadow-sm">
       <div class="col-2 col-md-1 vertical-align position-relative {{ $name->gender === "Boy" ? "bg-boy" : "bg-girl" }}">
         <a class="text-dark stretched-link" href="{{ url('/name',$name->slug)}}.html">{{ $name->name[0] }}</a></div>
-      <div class="col-11">
+      <div class="col-10 col-md-11">
         <div class="row">
           <div class="col-12 pt-1 "><a class="name" href="{{ url('/name',$name->slug)}}.html">{{ $name->name }}</a>
           </div>
@@ -74,9 +74,9 @@
   </div>
 
   @if(Auth::check() AND count($names) > 9)
-  <div class="alert alert-warning-alt" role="alert">Hello <strong>{{Auth::user()->name }}</strong>, wold you like to
-    share your favorite list to public? <button class="btn btn-danger" data-toggle="modal" data-target="#myLists"><i
-        class="fa fa-newspaper-o" aria-hidden="true"></i> Publish my lists</button></div>
+  <div class="alert alert-warning-alt" role="alert"><p>Hello <strong>{{Auth::user()->name }}</strong>, would you like to
+    share your favorite list to Names4Muslims.com users?</p>
+    <button class="btn btn-danger" data-toggle="modal" data-target="#myLists"><i class="far fa-check-square"></i> Publish My List</button></div>
   @endif
   <div class="card card-default  mb-3">
     <div class="card-body">
@@ -84,14 +84,9 @@
         <div class="col-md-4 mb-3"><button class="btn btn-primary btn-block" data-toggle="modal"
             data-target="#myModal"><i class="fa fa-envelope" aria-hidden="true"></i> Email Favorites</button></div>
         <div class="col-md-4 mb-3">
-          @if (Auth::check())
-          <a class="btn btn-success btn-block" href="/favorite/download"><i class="fa fa-download"
-              aria-hidden="true"></i> Download</a>
-          @else
-          <a href="#" class="btn btn-success btn-block" data-toggle="tooltip"
+          <a href="/favorite/download" class="btn btn-success btn-block" data-toggle="tooltip"
             title="You must logged in to download this names"><i class="fa fa-download" aria-hidden="true"></i>
             Download</a>
-          @endif
         </div>
 
         <div class="col-md-4 mb-3"><button class="btn btn-info btn-block"><i class="fa fa-print" aria-hidden="true"></i>

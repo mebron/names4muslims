@@ -54,23 +54,29 @@ echo json_encode([
 @if ($agent->isMobile())
 <div class="container-fluid px-1">
   @else
-  <div class="container pt-2">
+  <div class="container pt-3">
     @endif
 @yield('content')
 </div>
 <div id="inbox">
 <div class="" id="favCounter">
-<div class="fa-3x">
-<a href="#" id="pop"><span class="fa-layers fa-fw"><i class="fas fa-heart text-success"></i><span class="fa-layers-counter" data-fa-transform="shrink-11.5"><favcounter></favcounter></span></span></a>
+<div class="fa-2x">
+  <a href="#" class="text-girl" id="pop">
+    <span class="fa-layers fa-fw">
+    <i class="fas fa-heart"></i>
+    <span class="fa-layers-text fa-inverse count" data-fa-transform="shrink-11.5" style="font-weight:900">{{ $favCount }}</span></span></a>
 </div>
 </div>
 </div>
-<footer class="footer mt-3">
+<footer class="pt-2">
 <div class="container">
-<div class="row p-3">
-<div class="col-xs-12 col-sm-5 col-md-5 col-md-push-7 text-muted"><a href="https://www.names4muslims.com/">Home</a> | <a href="{{ URL('/privacy.html') }}">Privacy & Policy</a> | <a href="{{ URL('/contacts.html')}}">Contact Us</a></div>
-<div class="col-xs-12 col-sm-7 col-md-7 col-md-pull-5 text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Names4muslims.com and www.muslim-names.net. Site by <a class="text-muted" href="http://mebron.com" title="Website by">Mebron</a></div>
-
+<div class="row">
+<div class="col-md-4">
+<a class="text-muted" href="{{ url('/') }}">Home</a> | <a class="text-muted" href="{{ url('privacy.html') }}">Privacy & Policy</a> | <a class="text-muted" href="{{ url('contacts.html') }}">Contact Us</a>
+</div>
+<div class="col-md-8">
+<p class="text-muted text-right">© Copyright &copy; <script>document.write(new Date().getFullYear())</script> Names4muslims.com</p>
+</div>
 </div>
 </div>
 </footer>
@@ -142,6 +148,6 @@ ga('send', 'pageview');
 });
 </script>
 @yield('scripts')
-@include('sweet::alert')
+@include('sweetalert::alert')
 </body>
 </html>

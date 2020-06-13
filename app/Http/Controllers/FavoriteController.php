@@ -227,12 +227,21 @@ class FavoriteController extends Controller
     }
     public function download()
     {
-        $user  = Auth::user();
-        $name  = $user->name;
-        $names = User::find($user->id)->entries;
-        view()->share('names', $names);
-        $pdf = PDF::loadView('pdf.favoritespdf', $names);
-        return $pdf->download('Names4Muslims-' . $name . '.pdf');
+        if(Auth::check())
+        {
+            $user  = Auth::user();
+            $name  = $user->name;
+            $names = User::find($user->id)->entries;
+            view()->share('names', $names);
+            $pdf = PDF::loadView('pdf.favoritespdf', $names);
+            return $pdf->download('Names4Muslims-' . $name . '.pdf');
+        }
+        else{
+            Alert::warning('You must logged in to download this names');
+            return redirect('/login');
+            dd('hi');
+        }
+
     }
     public function pdf()
     {

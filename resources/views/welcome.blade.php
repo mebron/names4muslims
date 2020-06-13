@@ -52,6 +52,7 @@ background: radial-gradient(ellipse at center, rgba(228,239,192,1) 0%,rgba(171,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', endColorstr='#abbd73',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .link-pink { color: #ff99cc!important; }.link-pink:hover { color: #ff6699!important; }.blue-link { color: #99ccff!important; }.blue-link:hover { color: #6699ff!important; }
+.underline a{ text-decoration: underline !important}
 </style>
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
@@ -102,30 +103,34 @@ Search
 <div class="col-md-3 col-xl-2 sidebar">
 <div class="theiaStickySidebar">
 @endif
-<ul class="list-unstyled mnu">
-<li class="title"><strong>Browse Baby Names</strong></li>
+<ul class="list-unstyled  underline">
+<li class="title"><strong>Baby Names Quick Links</strong></li>
+<div class="dropdown-divider"></div>
 <li><a href="/baby-names">Muslim Names</a></li>
-<li><a href="/browse-baby-names-by-letter/a">Names by Letter</a></li>
-<li><a href="/most-popular-names">Most popular names</a></li>
-<li><a href="/random-baby-names">Random baby names</a></li>
-<li><a href="/short-muslim-baby-names">Short Muslim names</a></li>
-<li class="title"><strong>Muslim Boy Names</strong></li>
 <li><a href="/muslim-boy-names">Muslim Boy names</a></li>
-<li><a href="/boy-names-by-letter.html">Boy names by letter</a></li>
-<li><a href="/three-letter-boy-names">Short boy names</a></li>
-<li><a href="/random-boy-names">Random boy names</a></li>
-
-<li class="title"><strong>Muslim Girl Names</strong></li>
 <li><a href="/muslim-girl-names">Muslim Girl names</a></li>
-<li><a href="/girl-names-by-letter.html">Girl names by letter</a></li>
-<li><a href="/three-letter-girl-names">Short Girl names</a></li>
-<li><a href="/random-girl-names">Random girl names</a></li>
-
+<li><a href="/most-popular-names">Most popular names</a></li>
+<div class="dropdown-divider"></div>
+<li><a href="/browse-baby-names-by-letter/a">Names By Letter</a></li>
+<li><a href="/girl-names-by-letter.html">Girl Names By Letter</a></li>
+<li><a href="/boy-names-by-letter.html">Boy Names By Letter</a></li>
+<div class="dropdown-divider"></div>
 <li class="title"><strong>Favorite Names</strong></li>
+<div class="dropdown-divider"></div>
 <li><a href="/favorite-names.html">My favorite names</a></li>
 <li><a href="/most-favorited-muslim-baby-names">Most favorited names</a></li>
+<div class="dropdown-divider"></div>
+<li><a href="/short-muslim-baby-names">Short Muslim names</a></li>
+<li><a href="/three-letter-boy-names">Short boy names</a></>
+  <li><a href="/three-letter-girl-names">Short Girl names</a></li>
 
+<div class="dropdown-divider"></div>
+<li><a href="/random-baby-names">Baby Names Generator</a></li>
+<li><a href="/random-girl-names">Girl Names Generator</a></li>
+<li><a href="/random-boy-names">Boy Names Generator</a></li>
+<div class="dropdown-divider"></div>
 <li class="title"><strong>More</strong></li>
+<div class="dropdown-divider"></div>
 <li><a href="/asma-ul-husna">Asma-ul-Husna</a></li>
 <li><a href="/dua.php">Duas for Kids</a></li>
 <li><a href="/why-muslims-looking-for-meaning-of-name.html">Why good meaning</a></li>
@@ -238,7 +243,7 @@ Search
  <div class="row">
       @foreach ($chunk as $name)
    <div class="col-md-3 col-6">
-    <a href="/name/{{ $name->names->slug }}.html"  title="{{ $name->names->name }}" class="pop {{ $name->names->gender === "Boy" ? "blue-link" : "link-pink" }}">{{ $name->names->name }}</a>
+    <a href="/name/{{ $name->names->slug }}.html"  title="{{ $name->names->name }}" class="pop name {{ $name->names->gender === "Boy" ? "blue-link" : "link-pink" }}">{{ $name->names->name }}</a>
    </div>
       @endforeach
  </div>
@@ -257,7 +262,7 @@ Search
  <div class="row">
       @foreach ($chunk as $name)
    <div class="col-md-3 col-6">
-    <a href="/name/{{ $name->slug }}.html" title="{{ $name->name }} is a Muslim Boy Name" class="blue-link">{{ $name->name }}</a>
+    <a href="/name/{{ $name->slug }}.html" title="{{ $name->name }} is a Muslim Boy Name" class="name blue-link">{{ $name->name }}</a>
    </div>
       @endforeach
  </div>
@@ -275,7 +280,7 @@ Search
  <div class="row">
       @foreach ($chunk as $name)
    <div class="col-md-3 col-6">
-    <a href="/name/{{ $name->slug }}.html" title="{{ $name->name }} is Muslim Girl Name" class="pop link-pink text-nowrap"><d>{{ $name->name }}</d></a>
+    <a href="/name/{{ $name->slug }}.html" title="{{ $name->name }} is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>{{ $name->name }}</d></a>
    </div>
       @endforeach
  </div>
@@ -573,6 +578,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-W9W26C9');</script>
 <!-- End Google Tag Manager -->
-@include('sweet::alert')
+@include('sweetalert::alert')
 </body>
 </html>

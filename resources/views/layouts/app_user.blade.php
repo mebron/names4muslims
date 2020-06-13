@@ -127,6 +127,6 @@ ga('send', 'pageview');
 
 </script>
 @yield('scripts')
-@include('sweet::alert')
+@include('sweetalert::alert')
 </body>
 </html>
