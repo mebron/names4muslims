@@ -162,7 +162,7 @@ Search
 <div class="row">
 <div class="col-md-6">
 <div class="card shadow mb-3">
-<img class="card-img-top img-fluid" src="https://d3w4b6mljoazo9.cloudfront.net/assets/img/boy.jpg" alt="Baby Boy Name">
+<img class="card-img-top img-fluid" src="{{ asset('/img/boy.webp') }}" alt="Baby Boy Name">
 <div class="card-body">
 <h4 class="card-title">Alphabetic List of Boy Names</h4>
 <a href="/boy-names-starting-with-a" title="Muslim Boy Names Start With A" class="btn btn-circle btn-md btn-lblue">A</a>
@@ -202,7 +202,7 @@ Search
 <div class="col-md-6">
 
 <div class="card shadow mb-3">
-<img class="card-img-top img-fluid" src="https://d3w4b6mljoazo9.cloudfront.net/assets/img/girl.jpg" alt="Baby Girl Name">
+<img class="card-img-top img-fluid" src="{{ asset('/img/girl.webp') }}" alt="Baby Girl Name">
 <div class="card-body">
 <h4 class="card-title">Alphabetic List of Girl Names</h4>
 
