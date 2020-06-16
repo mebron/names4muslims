@@ -542,7 +542,6 @@ We are proud to offer the web's largest collection of Muslim Baby Names or Islam
   </div>
 </div>
 <!-- Scripts -->
-<script src="https://use.fontawesome.com/723865a7d5.js"></script>
 <script src="https://kit.fontawesome.com/e0ca5ae3cb.js" defer></script>
 <script src="https://d3w4b6mljoazo9.cloudfront.net/assets/js/app.js"></script>
 <script type="text/javascript">
