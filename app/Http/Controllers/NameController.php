@@ -39,7 +39,7 @@ class NameController extends Controller
     }
     public function girls()
     {
-        SEOTools::setTitle('Muslim Girl Beautiful Names With Meanings');
+        SEOTools::setTitle('Muslim Girl Beautiful Names With Meaning');
         SEOTools::setDescription("Muslim girl baby names with their meanings, choose a unique and beautiful name for your cute baby girl.");
         //SEOTools::addKeyword(['Muslim Names','muslim girl names', 'muslim girls names', 'baby girls names', 'islamic girl names', 'islamic baby names', 'popular girl names', 'uk muslim girl name']);
         $data['page_title'] = 'Muslim Baby Girl Beautiful Names';
