@@ -162,7 +162,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     Policy</a> | <a href="{{ URL('/contacts.html')}}">Contact Us</a></div>
                             <div class="col-xs-12 col-sm-7 col-md-7 col-md-pull-5 text-muted">Copyright &copy; <script>
                                     document.write(new Date().getFullYear())
-                                </script> Names4muslims.com and www.muslim-names.net. Site by <a class="text-muted"
+                                </script> Names4muslims.com. Site by <a class="text-muted"
                                     href="http://mebron.com" title="Website by">Mebron</a></div>
 
                         </div>
