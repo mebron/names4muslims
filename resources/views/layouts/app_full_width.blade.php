@@ -146,5 +146,10 @@ $(document).ready(function () {
 @include('sweetalert::alert')
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-554db26f7c3a70ba" defer></script>
+<script type="text/javascript">
+var infolinks_pid = 3233647;
+var infolinks_wsid = 0;
+</script>
+<script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
 </html>
