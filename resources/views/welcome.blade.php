@@ -105,13 +105,8 @@ Search
 </div>
 <div class="container-fluid pt-3">
 <div class="row flex-xl-nowrap">
-@if($agent->is_mobile())
-<div class="col-md-4 col-sm-4 col-12">
-<div class="content">
-@else
 <div class="col-md-3 col-xl-2 sidebar">
 <div class="theiaStickySidebar">
-@endif
 <ul class="list-unstyled  underline">
 <li class="title"><strong>Baby Names Quick Links</strong></li>
 <div class="dropdown-divider"></div>
@@ -158,12 +153,12 @@ Search
 <p class="text-justify" style="color:#48484A">A Muslim child where ever born, and a person embracing Islam, used to be called in a new name, probably in Arabic Name. Names of prophets, names combined with Asmaul Husna (Names of God), names from history, and the traditional or modern names are being used in this regard.</p>
 <p class="text-justify" style="color:#48484A">The Prophet always chose names with good and beautiful meanings, even telling people to change their names if they had unpleasant meanings. Give your child the best possible name. Here at Names4Muslims.com, you can find beautiful and unique Muslim baby boy names and Muslim baby girl names.</p>
 
-<div class="text-center"><a href="{{ url('/muslim-boy-names') }}" class="btn btn-boy mb-2" title="Muslim boy name">Muslim Boy Names</a>  <a href="{{ url('/muslim-girl-names') }}" class="btn btn-pink mb-2" title="Muslim girl name">Muslim Girl Names</a></div>
+<div class="text-center"><a href="https://www.names4muslims.com/muslim-boy-names" class="btn btn-boy mb-2" title="Muslim boy name">Muslim Boy Names</a>  <a href="https://www.names4muslims.com/muslim-girl-names" class="btn btn-pink mb-2" title="Muslim girl name">Muslim Girl Names</a></div>
 </div>
 <div class="row">
 <div class="col-md-6">
 <div class="card shadow mb-3">
-<img class="card-img-top img-fluid" src="{{ asset('/img/boy.webp') }}" alt="Baby Boy Name">
+<img class="card-img-top img-fluid" src="https://www.names4muslims.com/img/boy.webp" alt="Baby Boy Name">
 <div class="card-body">
 <h4 class="card-title">Alphabetic List of Boy Names</h4>
 <a href="/boy-names-starting-with-a" title="Muslim Boy Names Start With A" class="btn btn-circle btn-md btn-lblue">A</a>
@@ -203,7 +198,7 @@ Search
 <div class="col-md-6">
 
 <div class="card shadow mb-3">
-<img class="card-img-top img-fluid" src="{{ asset('/img/girl.webp') }}" alt="Baby Girl Name">
+<img class="card-img-top img-fluid" src="https://www.names4muslims.com/img/girl.webp" alt="Baby Girl Name">
 <div class="card-body">
 <h4 class="card-title">Alphabetic List of Girl Names</h4>
 
@@ -248,15 +243,90 @@ Search
     <h2 class="card-title text-center">Popular Muslim Names</h2>
       </div>
       <div class="card-body">
-  @foreach ($names->chunk(4) as $chunk)
- <div class="row">
-      @foreach ($chunk as $name)
-   <div class="col-md-3 col-6">
-    <a href="/name/{{ $name->names->slug }}.html"  title="{{ $name->names->name }}" class="pop name {{ $name->names->gender === "Boy" ? "blue-link" : "link-pink" }}">{{ $name->names->name }}</a>
+   <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/laiba.html"  title="Laiba" class="pop name link-pink">Laiba</a>
    </div>
-      @endforeach
- </div>
-@endforeach
+         <div class="col-md-3 col-6">
+    <a href="/name/manahil.html"  title="Manahil" class="pop name link-pink">Manahil</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/mohammed.html"  title="Mohammed" class="pop name blue-link">Mohammed</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/aahil.html"  title="Aahil" class="pop name blue-link">Aahil</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/eshal.html"  title="Eshal" class="pop name link-pink">Eshal</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/manha.html"  title="Manha" class="pop name link-pink">Manha</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/aaban.html"  title="Aaban" class="pop name blue-link">Aaban</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/aisha.html"  title="Aisha" class="pop name link-pink">Aisha</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/aishah.html"  title="A&#039;ishah" class="pop name link-pink">A&#039;ishah</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/aleena.html"  title="Aleena" class="pop name link-pink">Aleena</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/afnan.html"  title="Afnan" class="pop name link-pink">Afnan</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/ashadieeyah.html"  title="A&#039;shadieeyah" class="pop name link-pink">A&#039;shadieeyah</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/amelia.html"  title="Amelia" class="pop name link-pink">Amelia</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/rayyan.html"  title="Rayyan" class="pop name blue-link">Rayyan</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/zayan.html"  title="Zayan" class="pop name blue-link">Zayan</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/rehan.html"  title="Rehan" class="pop name blue-link">Rehan</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/mariam-maryam.html"  title="Maryam" class="pop name link-pink">Maryam</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/aiza.html"  title="Aiza" class="pop name link-pink">Aiza</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/amreen.html"  title="Amreen" class="pop name link-pink">Amreen</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/usman.html"  title="Usman" class="pop name blue-link">Usman</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/shaista.html"  title="Shaista" class="pop name link-pink">Shaista</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/nimra.html"  title="Nimra" class="pop name link-pink">Nimra</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/zoya.html"  title="Zoya" class="pop name link-pink">Zoya</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/aidah-1.html"  title="A&#039;idah" class="pop name link-pink">A&#039;idah</a>
+   </div>
+       </div>
       </div>
 <div class="card-footer bg-transparent text-center border-0">
  <a class="btn btn-success" href="/most-popular-names" title="Popular Baby Names"><strong>Popular Baby Names</strong></a>
@@ -267,15 +337,90 @@ Search
     <h2 class="card-title text-center">Muslim Boy Names</h2>
   </div>
   <div class="card-body">
-  @foreach ($boys->chunk(4) as $chunk)
- <div class="row">
-      @foreach ($chunk as $name)
-   <div class="col-md-3 col-6">
-    <a href="/name/{{ $name->slug }}.html" title="{{ $name->name }} is a Muslim Boy Name" class="name blue-link">{{ $name->name }}</a>
+   <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/abdur-rahman.html" title="Abdur-Rahman is a Muslim Boy Name" class="name blue-link">Abdur-Rahman</a>
    </div>
-      @endforeach
- </div>
-@endforeach
+         <div class="col-md-3 col-6">
+    <a href="/name/abaan.html" title="Abaan is a Muslim Boy Name" class="name blue-link">Abaan</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/ali-ali-aliyy.html" title="Ali , Ali, Aliyy is a Muslim Boy Name" class="name blue-link">Ali , Ali, Aliyy</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/budail-budayl.html" title="Budail, Budayl is a Muslim Boy Name" class="name blue-link">Budail, Budayl</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/barir.html" title="Barir is a Muslim Boy Name" class="name blue-link">Barir</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/fayzan.html" title="Fayzan is a Muslim Boy Name" class="name blue-link">Fayzan</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/hanash.html" title="Hanash is a Muslim Boy Name" class="name blue-link">Hanash</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/hidayat.html" title="Hidayat is a Muslim Boy Name" class="name blue-link">Hidayat</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/irfan-irfan.html" title="Irfan, Irfan is a Muslim Boy Name" class="name blue-link">Irfan, Irfan</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/jaun.html" title="Jaun is a Muslim Boy Name" class="name blue-link">Jaun</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/maher.html" title="Maher is a Muslim Boy Name" class="name blue-link">Maher</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/maruf.html" title="Maruf is a Muslim Boy Name" class="name blue-link">Maruf</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/masud.html" title="Masud is a Muslim Boy Name" class="name blue-link">Masud</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/najjar.html" title="Najjar is a Muslim Boy Name" class="name blue-link">Najjar</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/robeel.html" title="Robeel is a Muslim Boy Name" class="name blue-link">Robeel</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/samir-sameer.html" title="Samir, Sameer is a Muslim Boy Name" class="name blue-link">Samir, Sameer</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/sawlat.html" title="Sawlat is a Muslim Boy Name" class="name blue-link">Sawlat</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/shagufta.html" title="Shagufta is a Muslim Boy Name" class="name blue-link">Shagufta</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/sharaf.html" title="Sharaf is a Muslim Boy Name" class="name blue-link">Sharaf</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/sufyan.html" title="Sufyan is a Muslim Boy Name" class="name blue-link">Sufyan</a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/umair.html" title="Umair is a Muslim Boy Name" class="name blue-link">Umair</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/uqbah.html" title="Uqbah is a Muslim Boy Name" class="name blue-link">Uqbah</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/wafiq-wafeeq.html" title="Wafiq, Wafeeq is a Muslim Boy Name" class="name blue-link">Wafiq, Wafeeq</a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/zaeem.html" title="Zaeem is a Muslim Boy Name" class="name blue-link">Zaeem</a>
+   </div>
+       </div>
 </div>
 <div class="card-footer text-center bg-transparent border-0">
  <a class="btn btn-boy" href="/muslim-boy-names" title="Muslim Boy names"><strong>Muslim Boy Names</strong></a>
@@ -285,15 +430,90 @@ Search
   <div class="card mb-3 shadow rounded-lg">
     <div class="card-header border-0"><h2 class="card-title text-center">Muslim Girl Names</h2></div>
     <div class="card-body">
-  @foreach ($girls->chunk(4) as $chunk)
- <div class="row">
-      @foreach ($chunk as $name)
-   <div class="col-md-3 col-6">
-    <a href="/name/{{ $name->slug }}.html" title="{{ $name->name }} is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>{{ $name->name }}</d></a>
+   <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/lulu.html" title="Lulu is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Lulu</d></a>
    </div>
-      @endforeach
- </div>
-@endforeach
+         <div class="col-md-3 col-6">
+    <a href="/name/alya.html" title="Alya is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Alya</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/amelia.html" title="Amelia is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Amelia</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/aneesa.html" title="Aneesa is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Aneesa</d></a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/aroob.html" title="Aroob is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Aroob</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/dhakirah.html" title="Dhakirah is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Dhakirah</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/eiman.html" title="Eiman is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Eiman</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/fakhra.html" title="Fakhra is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Fakhra</d></a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/fareedah.html" title="Fareedah is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Fareedah</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/humaydah.html" title="Humaydah is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Humaydah</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/malikah.html" title="Malikah is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Malikah</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/minal.html" title="Minal is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Minal</d></a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/mubin.html" title="Mubin is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Mubin</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/nabeeha.html" title="Nabeeha is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Nabeeha</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/nouf.html" title="Nouf is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Nouf</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/qismah.html" title="Qismah is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Qismah</d></a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/rabeea.html" title="Rabeea is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Rabeea</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/salmaa.html" title="Salmaa is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Salmaa</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/shanika.html" title="Shanika is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Shanika</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/suwaydah.html" title="Suwaydah is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Suwaydah</d></a>
+   </div>
+       </div>
+ <div class="row">
+         <div class="col-md-3 col-6">
+    <a href="/name/warqa-warqaa.html" title="Warqa, Warqaa is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Warqa, Warqaa</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/widad.html" title="Widad is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Widad</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/zahrah.html" title="Zahrah is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Zahrah</d></a>
+   </div>
+         <div class="col-md-3 col-6">
+    <a href="/name/zeba.html" title="Zeba is Muslim Girl Name" class="pop name link-pink text-nowrap"><d>Zeba</d></a>
+   </div>
+       </div>
 </div>
 <div class="card-footer text-center bg-transparent border-0">
 <a class="btn btn-pink" href="/muslim-girl-names" title="Muslim girl names"><strong>Muslim Girl Names</strong></a>
@@ -364,7 +584,7 @@ If you don't want a lengthy name or you want to keep things simple, one of these
 </p>
 </blockquote>
 </div>
-<p><a href="{{ url('/short-muslim-baby-names') }}" class="btn btn-primary">View short baby names</a></p>
+<p><a href="https://www.names4muslims.com/short-muslim-baby-names" class="btn btn-primary">View short baby names</a></p>
 </div>
 
 <div class="card mb-3">

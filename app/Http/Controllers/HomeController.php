@@ -31,12 +31,12 @@ class HomeController extends Controller
             //->first();
            // dd($hits);
            // $hits = $hits->names;
-        $names = NameRating::where('total_value', '>', '500')->orderBy('total_value', 'desc')->take(24)->get();
-        $collection = Name::where('gender','Boy')->get();
-        $boys = $collection->random(24);
-        $collection2 = Name::where('gender','Girl')->get();
-        $girls = $collection2->random(24);
-        return view('welcome', compact('names','boys','girls'));
+        // $names = NameRating::where('total_value', '>', '500')->orderBy('total_value', 'desc')->take(24)->get();
+        // $collection = Name::where('gender','Boy')->get();
+        // $boys = $collection->random(24);
+        // $collection2 = Name::where('gender','Girl')->get();
+        // $girls = $collection2->random(24);
+        return view('welcome');
     }
 
 }
