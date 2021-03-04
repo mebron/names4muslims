@@ -12,7 +12,6 @@
         "anam/captcha": "^1.0",
         "artesaos/seotools": "^0.17.2",
         "awssat/laravel-visits": "^2.2",
-        "barryvdh/laravel-debugbar": "^3.5",
         "barryvdh/laravel-dompdf": "^0.8.6",
         "cviebrock/eloquent-sluggable": "^7.0",
         "fideloper/proxy": "^4.2",
